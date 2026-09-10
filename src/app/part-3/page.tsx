@@ -382,7 +382,7 @@ export default function Part3CustomSectionPage() {
         <div className="hidden md:grid sqs-fluid-grid-20" style={{ minHeight: "560px" }}>
           {/* H2 Heading: col 3 to 17, row 4 to 8 */}
           <div style={{ gridColumn: "3 / 17", gridRow: "4 / 8" }} className="flex items-end pb-3">
-            <h2 className="font-serif-heading text-[32px] sm:text-[42px] lg:text-[49.7px] font-light text-[#242424] leading-[1.24] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#242424]">
               You’re holding onto hope that life can
               <br /> feel lighter and more grounded.
             </h2>
@@ -584,7 +584,7 @@ export default function Part3CustomSectionPage() {
 
         {/* Mobile View */}
         <div className="md:hidden relative z-10 px-6 py-12 text-center text-white">
-          <blockquote className="font-serif-heading text-2xl font-light text-[#F8F6F2] leading-[1.38] tracking-tight">
+          <blockquote className="font-serif-heading f-h2 text-[#F8F6F2]">
             You deserve a quiet, sacred space where your story is heard, honored, and deeply understood.{" "}
             <em className="font-light italic text-[#F8F6F2]">
               Nothing you bring is too heavy for us to carry together.
@@ -595,7 +595,7 @@ export default function Part3CustomSectionPage() {
         {/* Desktop 24-Column Fluid Grid */}
         <div className="hidden md:grid sqs-fluid-grid-11 relative z-10" style={{ minHeight: "340px" }}>
           <div style={{ gridColumn: "3 / 21", gridRow: "5 / 11" }} className="flex items-center">
-            <h2 className="font-serif-heading text-2xl sm:text-3xl lg:text-[42px] font-light text-[#F8F6F2] leading-[1.38] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#F8F6F2]">
               You deserve a quiet, sacred space where your story is heard, honored, and deeply understood.{" "}
               <em className="font-light italic text-[#F8F6F2]">
                 Nothing you bring is too heavy for us to carry together.
@@ -803,7 +803,7 @@ export default function Part3CustomSectionPage() {
 
           {/* Quote Text: col 16 to 26, row 9 to 15 */}
           <div style={{ gridColumn: "16 / 26", gridRow: "9 / 15" }} className="flex items-center pl-4">
-            <h2 className="font-serif-heading text-[32px] sm:text-[42px] lg:text-[49.7px] font-light text-[#242424] leading-[1.22] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#242424]">
               Honoring where you’ve been{" "}
               <span className="font-script f-script text-[#A45D43]">
                 &amp;
