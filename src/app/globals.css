@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #1C3B37;
+  --color-primary-hover: #142B28;
+  --color-secondary: #F0EAE1;
+  --color-surface: #FAF8F5;
+  --color-surface-alt: #F4EFE6;
+  --color-accent: #C28B59;
+  --color-accent-light: #F7EFE6;
+  --color-border: #E5DDD1;
+  --color-foreground: #1A2022;
+  --color-muted: #525D61;
+}
+
+/* Arch frames */
+.arch-top {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.arch-card {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 @font-face {
   font-family: 'beaufort-pro';
   src: url('/fonts/beaufort-pro-300.woff2') format('woff2');

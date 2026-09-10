@@ -52,8 +52,8 @@ export const mayaContent = {
       "Specialized, grounded psychological therapy for thoughtful, high-achieving adults navigating anxiety, trauma, and burnout. Combining practical tools with deep, lasting healing.",
     primaryCta: "Schedule a Consultation",
     secondaryCta: "Explore Specialties",
-    image1: "/assets/maya/hero-1.jpg",
-    image2: "/assets/maya/hero-2.jpg",
+    image1: "/assets/Dr. Maya Reynolds.png",
+    image2: "/assets/maya/hero-1.jpg",
   },
   empathy: {
     heading: "You’re holding onto hope that life can feel lighter and more grounded than it does right now.",
