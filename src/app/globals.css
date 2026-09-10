@@ -110,23 +110,34 @@
   font-family: 'Muli', sans-serif;
 }
 
-/* Conejo Squarespace Underlined Button (Primary) */
+/* Conejo Squarespace Underlined Button (Primary) — animated retracting underline */
 .conejo-btn-underline {
   position: relative;
   display: inline-block;
   font-family: 'Muli', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1.47px;
-  font-size: 12.26px;
-  padding-bottom: 4px;
+  letter-spacing: .12em;
+  font-size: calc(15px - 0.18vw);
+  line-height: 1.2em;
+  padding: 9px 0;
   color: #2B2B2B;
-  border-bottom: 1px solid #515151;
-  transition: opacity 0.3s ease, border-color 0.3s ease;
+  transform: perspective(1px) translateZ(0);
 }
-
+.conejo-btn-underline::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #515151;
+  transition-duration: 1s;
+}
 .conejo-btn-underline:hover {
-  opacity: 0.7;
+  opacity: 1;
+}
+.conejo-btn-underline:hover::before {
+  right: 100%;
 }
 
 /* Conejo Outlined Pill Button (Secondary / CTA) */
@@ -138,17 +149,16 @@
   font-family: 'Muli', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1.47px;
-  font-size: 12.26px;
-  min-width: 147px;
-  height: 47px;
-  padding: 0 24px;
-  border-radius: 9999px;
-  border: 0.8px solid #2B2B2B;
+  letter-spacing: .12em;
+  font-size: calc(15px - 0.18vw);
+  line-height: 1.2em;
+  padding: 15px 19.5px;
+  border-radius: 100%;
+  border: 1px solid #2B2B2B;
   color: #2B2B2B;
   background: transparent;
-  line-height: 1;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .conejo-btn-pill:hover {
@@ -156,7 +166,65 @@
   color: #ffffff;
 }
 
-/* Navigation link hover line */
+/* Maya Button Variants (Santa Monica Terracotta) */
+.maya-btn-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.32px;
+  font-size: 13.17px;
+  min-width: 147px;
+  height: 47px;
+  padding: 0 24px;
+  color: #242424;
+  background-color: transparent;
+  border: 1px solid #242424;
+  border-radius: 300px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.maya-btn-pill:hover {
+  background-color: #A45D43;
+  border-color: #A45D43;
+  color: #ffffff;
+}
+
+.maya-btn-underline {
+  position: relative;
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: calc(15px - 0.18vw);
+  line-height: 1.2em;
+  padding-bottom: 4px;
+  color: #242424;
+  transform: perspective(1px) translateZ(0);
+}
+.maya-btn-underline::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #A45D43;
+  transition-duration: 1s;
+}
+.maya-btn-underline:hover {
+  opacity: 1;
+}
+.maya-btn-underline:hover::before {
+  right: 100%;
+}
+
+/* Navigation link hover line (used by part-2) */
 .nav-link-item {
   position: relative;
   display: inline-block;
@@ -175,6 +243,86 @@
 
 .nav-link-item:hover::after {
   width: 100%;
+}
+
+/* ---- Authentic Squarespace fluid type (15px base) ---- */
+.f-h1 {
+  font-size: min(calc(3.12vw + 15px), 71.16px);
+  line-height: 1.2544;
+  letter-spacing: -.01em;
+  font-weight: 300;
+}
+.f-h2 {
+  font-size: min(calc(2.28vw + 15px), 56.04px);
+  line-height: 1.2936;
+  letter-spacing: -.01em;
+  font-weight: 300;
+}
+.f-h4 {
+  font-size: min(calc(0.84vw + 15px), 30.12px);
+  line-height: 1.3608;
+  letter-spacing: -.01em;
+  font-weight: 300;
+}
+.f-body {
+  font-size: min(calc(0.12vw + 15px), 17.16px);
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.f-small {
+  font-size: calc(15px - 0.12vw);
+  line-height: 1.8em;
+}
+.f-btn {
+  font-size: calc(15px - 0.18vw);
+  line-height: 1.2em;
+  letter-spacing: .12em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* Eyebrow + footer headings + bold-uppercase paras (sqsrte-large strong em) */
+.f-eyebrow {
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: .12em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.f-caps {
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: .12em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* Script accent words inside headings (h1/h2 strong em) */
+.f-script {
+  font-size: 1em;
+  line-height: .7em;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-style: normal;
+  display: inline;
+}
+/* Footer small text (.9 of fluid body, single-class, no inheritance trap) */
+.f-foot {
+  font-size: calc(min(0.12vw + 15px, 17.16px) * 0.9);
+  line-height: 1.8em;
+  font-weight: 300;
+}
+/* Footer small text (.9em of body) */
+.footer-small {
+  font-size: .9em;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .f-h1 { font-size: 41.3px; }
+  .f-h2 { font-size: 34.2px; }
+  .f-h4 { font-size: 22.1px; }
+  .f-body { font-size: 16px; }
+  .f-small { font-size: 14px; }
+  .f-btn, .conejo-btn-underline, .conejo-btn-pill { font-size: 13.48px; }
 }
 
 html {

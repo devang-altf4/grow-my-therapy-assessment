@@ -43,8 +43,8 @@ export default function Part1ClonePage() {
       {/* =========================================================================
           HEADER & NAVIGATION (Exact height: 118px, px-[76px], authentic nav order)
       ========================================================================== */}
-      <header className="relative bg-[#F6F4EE] w-full z-40 h-[118px] flex items-center">
-        <div className="w-full px-6 md:px-12 lg:px-[76px] flex items-center justify-between">
+      <header className="relative bg-[#F6F4EE] w-full z-40 py-[1.4vw] flex items-center">
+        <div className="w-full px-6 md:px-12 lg:px-[5vw] flex items-center justify-between">
           {/* Brand Logo */}
           <Link href="/part-1" className="relative h-[75px] w-[257px] flex-shrink-0 block">
             <Image
@@ -57,10 +57,10 @@ export default function Part1ClonePage() {
           </Link>
 
           {/* Right Section: Desktop Navigation Links + Contact CTA */}
-          <div className="hidden lg:flex items-center gap-[38px]">
+          <div className="hidden lg:flex items-center gap-[48px]">
             <nav
               aria-label="Desktop primary navigation"
-              className="flex items-center gap-[38px] text-[13.17px] font-sans-nav font-normal tracking-[1.32px] uppercase text-[#2B2B2B]"
+              className="flex items-center gap-[48px] f-small font-sans-nav font-normal tracking-[.1em] uppercase text-[#2B2B2B]"
             >
               {/* About */}
               <div
@@ -68,7 +68,7 @@ export default function Part1ClonePage() {
                 onMouseEnter={() => setActiveDropdown("about")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <span className="hover:text-[#86B3B3] transition-colors nav-link-item">
+                <span className="hover:text-[#86B3B3] transition-colors">
                   About
                 </span>
                 {activeDropdown === "about" && (
@@ -91,7 +91,7 @@ export default function Part1ClonePage() {
                 onMouseEnter={() => setActiveDropdown("team")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <span className="hover:text-[#86B3B3] transition-colors nav-link-item">
+                <span className="hover:text-[#86B3B3] transition-colors">
                   Our Team
                 </span>
                 {activeDropdown === "team" && (
@@ -114,7 +114,7 @@ export default function Part1ClonePage() {
                 onMouseEnter={() => setActiveDropdown("specialties")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <span className="hover:text-[#86B3B3] transition-colors nav-link-item">
+                <span className="hover:text-[#86B3B3] transition-colors">
                   Specialties
                 </span>
                 {activeDropdown === "specialties" && (
@@ -137,7 +137,7 @@ export default function Part1ClonePage() {
                 onMouseEnter={() => setActiveDropdown("methods")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <span className="hover:text-[#86B3B3] transition-colors nav-link-item">
+                <span className="hover:text-[#86B3B3] transition-colors">
                   Methods
                 </span>
                 {activeDropdown === "methods" && (
@@ -154,7 +154,7 @@ export default function Part1ClonePage() {
                 )}
               </div>
 
-              <span className="hover:text-[#86B3B3] transition-colors cursor-pointer nav-link-item">
+              <span className="hover:text-[#86B3B3] transition-colors cursor-pointer">
                 FAQs
               </span>
             </nav>
@@ -183,7 +183,7 @@ export default function Part1ClonePage() {
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-[#F6F4EE] border-b border-[#E3D9CA] px-6 py-6 space-y-4 absolute top-[118px] left-0 w-full shadow-lg">
+          <div className="lg:hidden bg-[#F6F4EE] border-b border-[#E3D9CA] px-6 py-6 space-y-4 absolute top-full left-0 w-full shadow-lg">
             <div className="flex flex-col space-y-3 font-sans-nav text-xs uppercase tracking-wider font-normal">
               <span className="py-2 border-b border-[#E3D9CA]/50">About</span>
               <span className="py-2 border-b border-[#E3D9CA]/50">Our Team</span>
@@ -222,17 +222,17 @@ export default function Part1ClonePage() {
             />
           </div>
           <div className="space-y-4">
-            <p className="font-sans-nav text-[13px] font-normal tracking-[1.8px] uppercase text-[#2B2B2B]">
+            <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY<br />PARK &amp; ACROSS CA
             </p>
-            <h1 className="font-serif-heading text-[36px] font-light text-[#2B2B2B] leading-[1.18] tracking-[-0.625px]">
-              Rebuild your foundation on<br />solid ground and finally<br />begin to <span className="font-script text-[48px] text-[#86B3B3]">thrive.</span>
+            <h1 className="font-serif-heading f-h1 text-[#2B2B2B]">
+              Rebuild your foundation on<br />solid ground and finally<br />begin to <span className="font-script f-script text-[#86B3B3]">thrive.</span>
             </h1>
             <p className="font-body text-[16px] text-[#2B2B2B] font-light">
               Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
             </p>
             <div>
-              <a href="#appointment" className="conejo-btn-underline text-[12.26px] tracking-[1.47px]">
+              <a href="#appointment" className="conejo-btn-underline">
                 BOOK AN APPOINTMENT
               </a>
             </div>
@@ -255,7 +255,7 @@ export default function Part1ClonePage() {
 
           {/* Eyebrow: col 12 to 20, row 2 to 4 */}
           <div style={{ gridColumn: "12 / 20", gridRow: "2 / 4" }} className="flex items-end pb-2">
-            <p className="font-sans-nav text-[14px] lg:text-[15px] font-normal tracking-[1.8px] uppercase text-[#2B2B2B] leading-[26px]">
+            <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY
               <br />
               PARK &amp; ACROSS CA
@@ -264,19 +264,19 @@ export default function Part1ClonePage() {
 
           {/* H1 Heading & Paragraph: col 12 to 25, row 7 to 15 */}
           <div style={{ gridColumn: "12 / 25", gridRow: "7 / 15" }} className="flex flex-col justify-center space-y-4">
-            <h1 className="font-serif-heading text-[38px] lg:text-[50px] xl:text-[62.5px] font-light text-[#2B2B2B] leading-[1.18] tracking-[-0.625px]">
-              <span className="inline-block whitespace-nowrap">Rebuild your foundation on</span>
+            <h1 className="font-serif-heading f-h1 text-[#2B2B2B]">
+              <span className="inline">Rebuild your foundation on</span>
               <br />
-              <span className="inline-block whitespace-nowrap">solid ground and finally</span>
+              <span className="inline">solid ground and finally</span>
               <br />
-              <span className="inline-block whitespace-nowrap">
+              <span className="inline">
                 begin to{" "}
-                <span className="font-script text-[62.5px] text-[#86B3B3] font-light inline-block ml-1">
+                <span className="font-script f-script text-[#86B3B3]">
                   thrive.
                 </span>
               </span>
             </h1>
-            <p className="font-body text-[16.8px] text-[#2B2B2B] font-light leading-[30.3px] max-w-2xl">
+            <p className="font-body f-body text-[#2B2B2B] max-w-2xl">
               Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
             </p>
           </div>
@@ -285,7 +285,7 @@ export default function Part1ClonePage() {
           <div style={{ gridColumn: "12 / 24", gridRow: "15 / 17" }} className="pt-2">
             <a
               href="#appointment"
-              className="conejo-btn-underline text-[12.26px] tracking-[1.47px]"
+              className="conejo-btn-underline"
             >
               BOOK AN APPOINTMENT
             </a>
@@ -312,16 +312,16 @@ export default function Part1ClonePage() {
       <section className="w-full bg-[#F6F4EE] py-16 lg:py-24 border-t border-[#E3D9CA]/40 overflow-hidden">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-6">
-          <h2 className="font-serif-heading text-[30px] font-light text-[#2B2B2B] leading-[1.24]">
+          <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             You’re holding onto hope that life can be better than it is right now.
           </h2>
-          <p className="font-serif-heading text-[18px] font-normal italic text-[#2B2B2B] leading-snug">
+          <p className="font-sans-nav f-caps text-[#2B2B2B]">
             At Conejo Valley Family Counseling we want to make that hope a reality.
           </p>
-          <p className="font-body text-[16px] font-light text-[#2B2B2B] leading-relaxed">
+          <p className="font-body f-body text-[#2B2B2B]">
             Whether you're an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life’s ups and downs.
           </p>
-          <p className="font-body text-[16px] font-light text-[#2B2B2B] leading-relaxed">
+          <p className="font-body f-body text-[#2B2B2B]">
             First and foremost, we believe what you’re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
           </p>
           <div className="relative aspect-[462/580] w-full overflow-hidden bg-[#E3D9CA]/30">
@@ -338,32 +338,31 @@ export default function Part1ClonePage() {
         {/* Desktop 24-Column Fluid Grid */}
         <div className="hidden md:grid sqs-fluid-grid-20" style={{ minHeight: "560px" }}>
           {/* H2 Heading: col 3 to 16, row 4 to 8 */}
-          <div style={{ gridColumn: "3 / 16", gridRow: "4 / 8" }} className="flex items-end pb-3">
-            <h2 className="font-serif-heading text-[32px] sm:text-[42px] lg:text-[49.7px] font-light text-[#2B2B2B] leading-[1.24] tracking-tight">
-              You’re holding onto hope that life can
-              <br /> be better than it is right now.
+          <div style={{ gridColumn: "2 / 17", gridRow: "4 / 8" }} className="flex items-end pb-3">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
+              You’re holding onto hope that life can be better than it is right now.
             </h2>
           </div>
 
           {/* Col 1 Text: col 3 to 10, row 9 to 16 */}
-          <div style={{ gridColumn: "3 / 10", gridRow: "9 / 16" }} className="space-y-4 pr-2">
-            <p className="font-serif-heading text-[20px] lg:text-[22px] font-normal italic text-[#2B2B2B] leading-snug">
+          <div style={{ gridColumn: "2 / 10", gridRow: "9 / 16" }} className="space-y-4 pr-2">
+            <p className="font-sans-nav f-caps text-[#2B2B2B]">
               At Conejo Valley Family Counseling we want to make that hope a reality.
             </p>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Whether you're an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life’s ups and downs.
             </p>
           </div>
 
           {/* Col 2 Text: col 10 to 17, row 9 to 17 */}
-          <div style={{ gridColumn: "10 / 17", gridRow: "9 / 17" }} className="space-y-3 px-2">
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+          <div style={{ gridColumn: "10 / 18", gridRow: "9 / 17" }} className="space-y-3 px-2">
+            <p className="font-body f-body text-[#2B2B2B]">
               First and foremost, we believe what you’re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
             </p>
           </div>
 
           {/* Right Ocean Image: col 19 to 27 (flush to right edge!), row 1 to 17 */}
-          <div style={{ gridColumn: "19 / 27", gridRow: "1 / 17" }} className="relative w-full h-full min-h-[500px]">
+          <div style={{ gridColumn: "20 / 27", gridRow: "1 / 17" }} className="relative w-full h-full min-h-[500px]">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__283_29.jpg"
               alt="Sandy beach with gentle ocean waves and a cloudy sky"
@@ -383,9 +382,9 @@ export default function Part1ClonePage() {
       <section className="bg-white py-16 lg:py-24 overflow-hidden">
         {/* Mobile View (<768px) */}
         <div className="md:hidden px-6 space-y-12">
-          <h2 className="font-serif-heading text-[36px] font-light text-[#2B2B2B] tracking-tight">
+          <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             Who we{" "}
-            <span className="font-script text-[1.25em] text-[#86B3B3] font-normal ml-1">
+            <span className="font-script f-script text-[#86B3B3]">
               help
             </span>
           </h2>
@@ -401,10 +400,10 @@ export default function Part1ClonePage() {
                 className="object-cover object-center"
               />
             </div>
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Adults
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.
             </p>
           </div>
@@ -420,10 +419,10 @@ export default function Part1ClonePage() {
                 className="object-cover object-center"
               />
             </div>
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Couples
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Relationships require effort, and we’re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.
             </p>
           </div>
@@ -439,10 +438,10 @@ export default function Part1ClonePage() {
                 className="object-cover object-center"
               />
             </div>
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Children &amp; Teens
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.
             </p>
           </div>
@@ -452,9 +451,9 @@ export default function Part1ClonePage() {
         <div className="hidden md:grid sqs-fluid-grid-20" style={{ minHeight: "750px" }}>
           {/* Heading: col 2 to 10, row 1 to 3 */}
           <div style={{ gridColumn: "2 / 10", gridRow: "1 / 3" }} className="flex items-center">
-            <h2 className="font-serif-heading text-[38px] sm:text-[49.7px] font-light text-[#2B2B2B] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
               Who we{" "}
-              <span className="font-script text-[1.25em] text-[#86B3B3] font-normal ml-1">
+              <span className="font-script f-script text-[#86B3B3]">
                 help
               </span>
             </h2>
@@ -473,10 +472,10 @@ export default function Part1ClonePage() {
 
           {/* Card 1 (Adults) Text: col 5 to 12, row 16 to 21 */}
           <div style={{ gridColumn: "5 / 12", gridRow: "16 / 21" }} className="space-y-3 pt-2">
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Adults
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.
             </p>
           </div>
@@ -494,10 +493,10 @@ export default function Part1ClonePage() {
 
           {/* Card 2 (Couples) Text: col 12 to 19, row 16 to 22 */}
           <div style={{ gridColumn: "12 / 19", gridRow: "16 / 22" }} className="space-y-3 pt-2">
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Couples
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Relationships require effort, and we’re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.
             </p>
           </div>
@@ -515,10 +514,10 @@ export default function Part1ClonePage() {
 
           {/* Card 3 (Children & Teens) Text: col 19 to 26, row 16 to 22 */}
           <div style={{ gridColumn: "19 / 26", gridRow: "16 / 22" }} className="space-y-3 pt-2">
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Children &amp; Teens
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.
             </p>
           </div>
@@ -543,7 +542,7 @@ export default function Part1ClonePage() {
 
         {/* Mobile View */}
         <div className="md:hidden relative z-10 px-6 py-12 text-center text-white">
-          <blockquote className="font-serif-heading text-2xl font-light text-[#F6F4EE] leading-[1.38] tracking-tight">
+          <blockquote className="font-serif-heading f-h2 text-[#F6F4EE]">
             You deserve a place where your story is heard, valued, and understood.{" "}
             <em className="font-light italic text-[#F6F4EE]">
               Nothing will be too heavy for us to carry together.
@@ -554,7 +553,7 @@ export default function Part1ClonePage() {
         {/* Desktop 24-Column Fluid Grid */}
         <div className="hidden md:grid sqs-fluid-grid-11 relative z-10" style={{ minHeight: "340px" }}>
           <div style={{ gridColumn: "3 / 19", gridRow: "5 / 11" }} className="flex items-center">
-            <h2 className="font-serif-heading text-2xl sm:text-3xl lg:text-[42px] font-light text-[#F6F4EE] leading-[1.38] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#F6F4EE]">
               You deserve a place where your story is heard, valued, and understood.{" "}
               <em className="font-light italic text-[#F6F4EE]">
                 Nothing will be too heavy for us to carry together.
@@ -573,10 +572,10 @@ export default function Part1ClonePage() {
       <section className="bg-white py-16 lg:py-24 overflow-hidden">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-8">
-          <h2 className="font-serif-heading text-3xl font-light text-[#2B2B2B] tracking-tight">
+          <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             Our areas of
             <br />
-            <span className="font-script text-[1.3em] text-[#86B3B3] font-normal block mt-1">
+            <span className="font-script f-script text-[#86B3B3]">
               expertise
             </span>
           </h2>
@@ -597,7 +596,7 @@ export default function Part1ClonePage() {
             ].map((item) => (
               <div
                 key={item}
-                className="py-3.5 text-[14px] font-sans-nav font-normal uppercase tracking-[1.8px] text-[#2B2B2B] border-b border-[#E3D9CA]"
+                className="py-3.5 text-[15px] font-sans-nav font-normal uppercase tracking-[1.8px] text-[#2B2B2B] border-b border-[#E3D9CA]"
               >
                 {item}
               </div>
@@ -609,10 +608,10 @@ export default function Part1ClonePage() {
         <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "480px" }}>
           {/* Title: col 3 to 9, row 1 to 4 */}
           <div style={{ gridColumn: "3 / 9", gridRow: "1 / 4" }} className="flex items-start">
-            <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-[49.7px] font-light text-[#2B2B2B] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
               Our areas of
               <br />
-              <span className="font-script text-[1.3em] text-[#86B3B3] font-normal block mt-1">
+              <span className="font-script f-script text-[#86B3B3]">
                 expertise
               </span>
             </h2>
@@ -676,10 +675,10 @@ export default function Part1ClonePage() {
       <section className="w-full bg-[#E3D9CA] py-12 lg:py-16 overflow-hidden">
         {/* Mobile View */}
         <div className="md:hidden px-6 py-16 space-y-6">
-          <p className="font-sans-nav text-[13px] font-normal tracking-[1.8px] uppercase text-[#2B2B2B]">
+          <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
             HOW WE WORK
           </p>
-          <h2 className="font-serif-heading text-[30px] font-light text-[#2B2B2B] leading-[1.2]">
+          <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             We’re here to make a difference.
           </h2>
           <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E3D9CA]/30">
@@ -692,7 +691,7 @@ export default function Part1ClonePage() {
             />
           </div>
           <div className="space-y-4 text-[16px] font-body font-light text-[#2B2B2B] leading-relaxed">
-            <p className="font-serif-heading text-[18px] font-normal italic text-[#2B2B2B] leading-snug">
+            <p className="font-sans-nav f-caps text-[#2B2B2B]">
               The clients we work with are balancing so many things at once, it’s often hard for them to put themselves first.
             </p>
             <p>
@@ -703,7 +702,7 @@ export default function Part1ClonePage() {
             </p>
           </div>
           <div>
-            <a href="#about" className="conejo-btn-underline text-[12.26px] tracking-[1.47px]">
+            <a href="#about" className="conejo-btn-underline">
               LEARN MORE ABOUT US
             </a>
           </div>
@@ -712,21 +711,21 @@ export default function Part1ClonePage() {
         {/* Desktop 24-Column Fluid Grid */}
         <div className="hidden md:grid sqs-fluid-grid-20" style={{ minHeight: "750px" }}>
           {/* Eyebrow: col 3 to 15, row 4 to 6 */}
-          <div style={{ gridColumn: "3 / 15", gridRow: "4 / 6" }} className="flex items-end pb-1">
-            <p className="font-sans-nav text-[15px] font-normal tracking-[1.8px] uppercase text-[#2B2B2B]">
+          <div style={{ gridColumn: "2 / 15", gridRow: "4 / 6" }} className="flex items-end pb-1">
+            <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               HOW WE WORK
             </p>
           </div>
 
           {/* H2 Heading: col 3 to 20, row 8 to 10 */}
-          <div style={{ gridColumn: "3 / 20", gridRow: "8 / 10" }} className="flex items-center">
-            <h2 className="font-serif-heading text-[32px] sm:text-[42px] lg:text-[49.7px] font-light text-[#2B2B2B] tracking-tight leading-[1.2]">
+          <div style={{ gridColumn: "2 / 21", gridRow: "8 / 10" }} className="flex items-center">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
               We’re here to make a difference.
             </h2>
           </div>
 
           {/* Right Image: col 21 to 27 (flush to right edge), row 4 to 22 */}
-          <div style={{ gridColumn: "21 / 27", gridRow: "4 / 22" }} className="relative w-full h-full min-h-[520px]">
+          <div style={{ gridColumn: "22 / 27", gridRow: "4 / 22" }} className="relative w-full h-full min-h-[520px]">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
               alt="A woman and a child in white dresses dancing on a sandy beach"
@@ -737,25 +736,25 @@ export default function Part1ClonePage() {
           </div>
 
           {/* Paragraph Col 1: col 3 to 11, row 11 to 20 */}
-          <div style={{ gridColumn: "3 / 11", gridRow: "11 / 20" }} className="space-y-4 pr-4">
-            <p className="font-serif-heading text-[20px] lg:text-[22px] font-normal italic text-[#2B2B2B] leading-snug">
+          <div style={{ gridColumn: "2 / 10", gridRow: "11 / 20" }} className="space-y-4 pr-4">
+            <p className="font-sans-nav f-caps text-[#2B2B2B]">
               The clients we work with are balancing so many things at once, it’s often hard for them to put themselves first.
             </p>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won’t find anything “one-size-fits-all” here.) If you’re ready to do the work, we’re ready to help.
             </p>
           </div>
 
           {/* Paragraph Col 2: col 11 to 19, row 11 to 20 */}
-          <div style={{ gridColumn: "11 / 19", gridRow: "11 / 20" }} className="space-y-3 px-2">
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+          <div style={{ gridColumn: "10 / 18", gridRow: "11 / 20" }} className="space-y-3 px-2">
+            <p className="font-body f-body text-[#2B2B2B]">
               Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you’ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what’s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
             </p>
           </div>
 
           {/* Button: col 3 to 19, row 21 to 23 */}
-          <div style={{ gridColumn: "3 / 19", gridRow: "21 / 23" }} className="pt-2">
-            <a href="#about" className="conejo-btn-underline text-[12.26px] tracking-[1.47px]">
+          <div style={{ gridColumn: "2 / 19", gridRow: "21 / 23" }} className="pt-2">
+            <a href="#about" className="conejo-btn-underline">
               LEARN MORE ABOUT US
             </a>
           </div>
@@ -780,9 +779,9 @@ export default function Part1ClonePage() {
             />
           </div>
           <div className="px-6 pb-12">
-            <h2 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] leading-[1.22]">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
               Honoring where you’ve been{" "}
-              <span className="font-script text-[1.3em] text-[#86B3B3] font-normal inline-block">
+              <span className="font-script f-script text-[#86B3B3]">
                 &amp;
               </span>
               <br />
@@ -806,9 +805,9 @@ export default function Part1ClonePage() {
 
           {/* Quote Text: col 16 to 26, row 9 to 15 */}
           <div style={{ gridColumn: "16 / 26", gridRow: "9 / 15" }} className="flex items-center pl-4">
-            <h2 className="font-serif-heading text-[32px] sm:text-[42px] lg:text-[49.7px] font-light text-[#2B2B2B] leading-[1.22] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
               Honoring where you’ve been{" "}
-              <span className="font-script text-[1.3em] text-[#86B3B3] font-normal inline-block">
+              <span className="font-script f-script text-[#86B3B3]">
                 &amp;
               </span>
               <br />
@@ -829,9 +828,9 @@ export default function Part1ClonePage() {
       <section className="bg-white border-t border-[#E3D9CA]/40 overflow-hidden">
         {/* Mobile View */}
         <div className="md:hidden px-6 py-16 space-y-10">
-          <h2 className="font-serif-heading text-3xl font-light text-[#2B2B2B] tracking-tight">
+          <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             Our{" "}
-            <span className="font-script text-[1.3em] text-[#86B3B3] font-normal">
+            <span className="font-script f-script text-[#86B3B3]">
               specialties
             </span>
             <br />
@@ -839,39 +838,39 @@ export default function Part1ClonePage() {
           </h2>
           <div className="space-y-8">
             <div className="space-y-3">
-              <h3 className="font-serif-heading text-[26px] font-light text-[#2B2B2B]">Trauma</h3>
-              <p className="font-body text-[16px] font-light text-[#2B2B2B] leading-relaxed">
+              <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">Trauma</h3>
+              <p className="font-body f-body text-[#2B2B2B]">
                 We don’t always know when and how we’ve experienced trauma. In therapy, we’ll work together to help you process your past, understand what’s causing you to stay “stuck,” and regain a sense of safety, control, and hope. You don’t have to carry your burdens alone.
               </p>
               <div>
-                <a href="#specialties" className="conejo-btn-underline text-[12px] tracking-wider">LEARN MORE</a>
+                <a href="#specialties" className="conejo-btn-underline">LEARN MORE</a>
               </div>
             </div>
             <div className="space-y-3">
-              <h3 className="font-serif-heading text-[26px] font-light text-[#2B2B2B]">Dissociation</h3>
-              <p className="font-body text-[16px] font-light text-[#2B2B2B] leading-relaxed">
+              <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">Dissociation</h3>
+              <p className="font-body f-body text-[#2B2B2B]">
                 The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we’ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.
               </p>
               <div>
-                <a href="#specialties" className="conejo-btn-underline text-[12px] tracking-wider">LEARN MORE</a>
+                <a href="#specialties" className="conejo-btn-underline">LEARN MORE</a>
               </div>
             </div>
             <div className="space-y-3">
-              <h3 className="font-serif-heading text-[26px] font-light text-[#2B2B2B]">EMDR</h3>
-              <p className="font-body text-[16px] font-light text-[#2B2B2B] leading-relaxed">
+              <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">EMDR</h3>
+              <p className="font-body f-body text-[#2B2B2B]">
                 Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.
               </p>
               <div>
-                <a href="#specialties" className="conejo-btn-underline text-[12px] tracking-wider">LEARN MORE</a>
+                <a href="#specialties" className="conejo-btn-underline">LEARN MORE</a>
               </div>
             </div>
             <div className="space-y-3">
-              <h3 className="font-serif-heading text-[26px] font-light text-[#2B2B2B]">Special Needs Parenting</h3>
-              <p className="font-body text-[16px] font-light text-[#2B2B2B] leading-relaxed">
+              <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">Special Needs Parenting</h3>
+              <p className="font-body f-body text-[#2B2B2B]">
                 Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.
               </p>
               <div>
-                <a href="#specialties" className="conejo-btn-underline text-[12px] tracking-wider">LEARN MORE</a>
+                <a href="#specialties" className="conejo-btn-underline">LEARN MORE</a>
               </div>
             </div>
           </div>
@@ -881,9 +880,9 @@ export default function Part1ClonePage() {
         <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "800px" }}>
           {/* Title: col 3 to 10, row 3 to 7 */}
           <div style={{ gridColumn: "3 / 10", gridRow: "3 / 7" }}>
-            <h2 className="font-serif-heading text-3xl sm:text-4xl lg:text-[49.7px] font-light text-[#2B2B2B] tracking-tight">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
               Our{" "}
-              <span className="font-script text-[1.3em] text-[#86B3B3] font-normal">
+              <span className="font-script f-script text-[#86B3B3]">
                 specialties
               </span>
               <br />
@@ -893,14 +892,14 @@ export default function Part1ClonePage() {
 
           {/* Col 1, Item 1 (Trauma): col 11 to 18, row 4 to 14 */}
           <div style={{ gridColumn: "11 / 18", gridRow: "4 / 14" }} className="space-y-3 pr-4">
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Trauma
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               We don’t always know when and how we’ve experienced trauma. In therapy, we’ll work together to help you process your past, understand what’s causing you to stay “stuck,” and regain a sense of safety, control, and hope. You don’t have to carry your burdens alone.
             </p>
             <div className="pt-2">
-              <a href="#specialties" className="conejo-btn-underline text-[12.26px] tracking-[1.47px]">
+              <a href="#specialties" className="conejo-btn-underline">
                 LEARN MORE
               </a>
             </div>
@@ -908,14 +907,14 @@ export default function Part1ClonePage() {
 
           {/* Col 1, Item 2 (Dissociation): col 11 to 18, row 15 to 25 */}
           <div style={{ gridColumn: "11 / 18", gridRow: "15 / 25" }} className="space-y-3 pr-4">
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Dissociation
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we’ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.
             </p>
             <div className="pt-2">
-              <a href="#specialties" className="conejo-btn-underline text-[12.26px] tracking-[1.47px]">
+              <a href="#specialties" className="conejo-btn-underline">
                 LEARN MORE
               </a>
             </div>
@@ -923,14 +922,14 @@ export default function Part1ClonePage() {
 
           {/* Col 2, Item 1 (EMDR): col 19 to 26, row 4 to 14 */}
           <div style={{ gridColumn: "19 / 26", gridRow: "4 / 14" }} className="space-y-3 pr-2">
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               EMDR
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.
             </p>
             <div className="pt-2">
-              <a href="#specialties" className="conejo-btn-underline text-[12.26px] tracking-[1.47px]">
+              <a href="#specialties" className="conejo-btn-underline">
                 LEARN MORE
               </a>
             </div>
@@ -938,14 +937,14 @@ export default function Part1ClonePage() {
 
           {/* Col 2, Item 2 (Special Needs Parenting): col 19 to 26, row 15 to 25 */}
           <div style={{ gridColumn: "19 / 26", gridRow: "15 / 25" }} className="space-y-3 pr-2">
-            <h3 className="font-serif-heading text-[28px] font-light text-[#2B2B2B] tracking-tight">
+            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
               Special Needs Parenting
             </h3>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.3px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.
             </p>
             <div className="pt-2">
-              <a href="#specialties" className="conejo-btn-underline text-[12.26px] tracking-[1.47px]">
+              <a href="#specialties" className="conejo-btn-underline">
                 LEARN MORE
               </a>
             </div>
@@ -971,17 +970,11 @@ export default function Part1ClonePage() {
       <section id="appointment" className="w-full bg-[#F6F4EE] py-16 lg:py-24 overflow-hidden">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-6 text-left">
-          <p className="font-sans-nav text-[14px] font-normal tracking-[1.8px] uppercase text-[#2B2B2B]">
+          <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
             SCHEDULE AN APPOINTMENT
           </p>
-          <h2 className="font-serif-heading text-[30px] font-light text-[#2B2B2B] leading-[1.2]">
-            Find a therapist who is the
-            <br />
-            right fit for{" "}
-            <span className="font-script text-[1.15em] text-[#86B3B3] font-normal inline-block lowercase">
-              you
-            </span>
-            .
+          <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
+            Find a therapist who is the right fit for <span className="font-script f-script text-[#86B3B3]">you</span>.
           </h2>
           <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E3D9CA]/30">
             <Image
@@ -992,11 +985,11 @@ export default function Part1ClonePage() {
               className="object-cover object-center"
             />
           </div>
-          <div className="space-y-4 text-[16.8px] font-body font-light text-[#2B2B2B] leading-[30.24px]">
+          <div className="space-y-4 font-body f-body text-[#2B2B2B]">
             <p>
               Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we're here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
             </p>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.24px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Click the button below to schedule an appointment.
             </p>
           </div>
@@ -1013,7 +1006,7 @@ export default function Part1ClonePage() {
         {/* Desktop 24-Column Fluid Grid */}
         <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "560px" }}>
           {/* Left Photo: col 1 to 4 (flush to left edge), row 4 to 16 */}
-          <div style={{ gridColumn: "1 / 4", gridRow: "4 / 16" }} className="relative w-full h-full min-h-[380px]">
+          <div style={{ gridColumn: "1 / 3", gridRow: "4 / 16" }} className="relative w-full h-full min-h-[380px]">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__2812_29.jpg"
               alt="A person picking up seashells on a sandy beach"
@@ -1024,36 +1017,31 @@ export default function Part1ClonePage() {
           </div>
 
           {/* Eyebrow: col 6 to 16, row 1 to 3 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "1 / 3" }} className="flex items-end justify-start pb-2 text-left">
-            <p className="font-sans-nav text-[14px] font-normal tracking-[1.8px] uppercase text-[#2B2B2B]">
+          <div style={{ gridColumn: "5 / 17", gridRow: "1 / 3" }} className="flex items-end justify-start pb-2 text-left">
+            <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               SCHEDULE AN APPOINTMENT
             </p>
           </div>
 
           {/* H2 Heading: col 6 to 16, row 4 to 8 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "4 / 8" }} className="flex items-center justify-start text-left">
-            <h2 className="font-serif-heading text-[32px] sm:text-[42px] lg:text-[49.7px] font-light text-[#2B2B2B] tracking-tight leading-[1.2]">
-              Find a therapist who is the
-              <br /> right fit for{" "}
-              <span className="font-script text-[1.15em] text-[#86B3B3] font-normal inline-block lowercase">
-                you
-              </span>
-              .
+          <div style={{ gridColumn: "5 / 17", gridRow: "4 / 8" }} className="flex items-center justify-start text-left">
+            <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
+              Find a therapist who is the right fit for <span className="font-script f-script text-[#86B3B3]">you</span>.
             </h2>
           </div>
 
           {/* Body text: col 6 to 16, row 8 to 14 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "8 / 14" }} className="flex flex-col justify-start text-left space-y-4 pt-1">
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.24px] max-w-lg">
+          <div style={{ gridColumn: "5 / 17", gridRow: "8 / 14" }} className="flex flex-col justify-start text-left space-y-4 pt-1">
+            <p className="font-body f-body text-[#2B2B2B] max-w-lg">
               Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we're here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
             </p>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.24px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               Click the button below to schedule an appointment.
             </p>
           </div>
 
           {/* CTA Button: col 6 to 16, row 14 to 16 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "14 / 16" }} className="flex items-start justify-start pt-2">
+          <div style={{ gridColumn: "5 / 17", gridRow: "14 / 16" }} className="flex items-start justify-start pt-2">
             <a
               href="#contact"
               className="conejo-btn-pill"
@@ -1063,7 +1051,7 @@ export default function Part1ClonePage() {
           </div>
 
           {/* Right Photo: col 18 to 27 (flush to right edge), row 1 to 16 */}
-          <div style={{ gridColumn: "18 / 27", gridRow: "1 / 16" }} className="relative w-full h-full min-h-[480px]">
+          <div style={{ gridColumn: "19 / 27", gridRow: "1 / 16" }} className="relative w-full h-full min-h-[480px]">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__2811_29.jpg"
               alt="A person in a striped dress pointing at shells on the sandy beach"
@@ -1094,15 +1082,15 @@ export default function Part1ClonePage() {
                 className="object-contain object-left"
               />
             </div>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.24px]">
+            <p className="font-body f-body text-[#2B2B2B]">
               We want to make getting started simple. You’re welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.
             </p>
           </div>
           <div className="space-y-3">
-            <h4 className="font-sans-nav text-[16.8px] font-normal uppercase tracking-[1.68px] leading-[30.24px] text-[#2B2B2B]">
+            <h4 className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               NAVIGATE
             </h4>
-            <ul className="space-y-[10px] text-[13.44px] font-body font-light text-[#2B2B2B] leading-[24.2px]">
+            <ul className="space-y-[10px] font-body f-foot text-[#2B2B2B]">
               <li><a href="#home" className="hover:text-[#86B3B3] transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-[#86B3B3] transition-colors">About</a></li>
               <li><a href="#faqs" className="hover:text-[#86B3B3] transition-colors">FAQs</a></li>
@@ -1110,10 +1098,10 @@ export default function Part1ClonePage() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h4 className="font-sans-nav text-[16.8px] font-normal uppercase tracking-[1.68px] leading-[30.24px] text-[#2B2B2B]">
+            <h4 className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               OUR TEAM
             </h4>
-            <ul className="space-y-[6px] text-[13.44px] font-body font-light text-[#2B2B2B] leading-[24.2px]">
+            <ul className="space-y-[6px] font-body f-foot text-[#2B2B2B]">
               {teamMembers.map((m) => (
                 <li key={m}>
                   <a href="#team" className="hover:text-[#86B3B3] transition-colors">
@@ -1124,10 +1112,10 @@ export default function Part1ClonePage() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h4 className="font-sans-nav text-[16.8px] font-normal uppercase tracking-[1.68px] leading-[30.24px] text-[#2B2B2B]">
+            <h4 className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               CONTACT
             </h4>
-            <div className="space-y-3 text-[13.44px] font-body font-light text-[#2B2B2B] leading-[24.2px]">
+            <div className="space-y-3 font-body f-foot text-[#2B2B2B]">
               <p>925 Broadbeck Dr<br />Suites 200 and 225<br />Newbury Park, CA 91320</p>
               <p>
                 <a href="mailto:info@conejovalleycounseling.com" className="hover:text-[#86B3B3] transition-colors">
@@ -1139,7 +1127,7 @@ export default function Part1ClonePage() {
                   805.242.3120
                 </a>
               </p>
-              <p className="text-[13.44px] font-body font-light italic text-[#2B2B2B] leading-[22px] pt-1">
+              <p className="font-body f-foot text-[#2B2B2B] pt-1">
                 Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, &amp; Simi Valley
               </p>
             </div>
@@ -1147,10 +1135,10 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "340px" }}>
-          {/* Logo & Warm Intro: col 2 to 10, row 1 to 10 */}
-          <div style={{ gridColumn: "2 / 10", gridRow: "1 / 10" }} className="space-y-6 pr-6">
-            <div className="relative h-[60px] w-[240px]">
+        <div className="hidden md:grid grid-cols-12 gap-6 px-[96px]">
+          {/* Logo & Warm Intro */}
+          <div className="col-span-4">
+            <div className="relative w-full max-w-[492px] aspect-[492/144]">
               <Image
                 src="/assets/conejo/Conejo_Valley_Counseling_Logo.png"
                 alt="Conejo Valley Family Counseling"
@@ -1158,17 +1146,17 @@ export default function Part1ClonePage() {
                 className="object-contain object-left"
               />
             </div>
-            <p className="font-body text-[16.8px] font-light text-[#2B2B2B] leading-[30.24px] max-w-[430px]">
+            <p className="font-body f-body text-[#2B2B2B] max-w-[430px] mt-6">
               We want to make getting started simple. You’re welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.
             </p>
           </div>
 
-          {/* Navigate: col 12 to 16, row 1 to 10 */}
-          <div style={{ gridColumn: "12 / 16", gridRow: "1 / 10" }}>
-            <h4 className="font-sans-nav text-[16.8px] font-normal uppercase tracking-[1.68px] leading-[30.24px] text-[#2B2B2B] mb-5">
+          {/* Navigate */}
+          <div className="col-start-6 col-span-2">
+            <h4 className="font-sans-nav f-eyebrow text-[#2B2B2B] mb-5">
               NAVIGATE
             </h4>
-            <ul className="space-y-[10px] text-[13.44px] font-body font-light text-[#2B2B2B] leading-[24.2px]">
+            <ul className="space-y-[10px] font-body f-foot text-[#2B2B2B]">
               <li><a href="#home" className="hover:text-[#86B3B3] transition-colors cursor-pointer">Home</a></li>
               <li><a href="#about" className="hover:text-[#86B3B3] transition-colors cursor-pointer">About</a></li>
               <li><a href="#faqs" className="hover:text-[#86B3B3] transition-colors cursor-pointer">FAQs</a></li>
@@ -1176,12 +1164,12 @@ export default function Part1ClonePage() {
             </ul>
           </div>
 
-          {/* Our Team: col 16 to 21, row 1 to 10 */}
-          <div style={{ gridColumn: "16 / 21", gridRow: "1 / 10" }}>
-            <h4 className="font-sans-nav text-[16.8px] font-normal uppercase tracking-[1.68px] leading-[30.24px] text-[#2B2B2B] mb-5">
+          {/* Our Team */}
+          <div className="col-start-8 col-span-2">
+            <h4 className="font-sans-nav f-eyebrow text-[#2B2B2B] mb-5">
               OUR TEAM
             </h4>
-            <ul className="space-y-[6px] text-[13.44px] font-body font-light text-[#2B2B2B] leading-[24.2px]">
+            <ul className="space-y-[6px] font-body f-foot text-[#2B2B2B]">
               {teamMembers.map((m) => (
                 <li key={m}>
                   <a href="#team" className="hover:text-[#86B3B3] transition-colors cursor-pointer">
@@ -1192,9 +1180,9 @@ export default function Part1ClonePage() {
             </ul>
           </div>
 
-          {/* Contact: col 21 to 26, row 1 to 10 */}
-          <div style={{ gridColumn: "21 / 26", gridRow: "1 / 10" }} className="text-[13.44px] font-body font-light text-[#2B2B2B] leading-[24.2px]">
-            <h4 className="font-sans-nav text-[16.8px] font-normal uppercase tracking-[1.68px] leading-[30.24px] text-[#2B2B2B] mb-5">
+          {/* Contact */}
+          <div className="col-start-10 col-span-3 font-body f-foot text-[#2B2B2B]">
+            <h4 className="font-sans-nav f-eyebrow text-[#2B2B2B] mb-5">
               CONTACT
             </h4>
             <div className="space-y-4">
@@ -1220,7 +1208,7 @@ export default function Part1ClonePage() {
                   </a>
                 </p>
               </div>
-              <p className="text-[13.44px] font-body font-light italic text-[#2B2B2B] leading-[22px] pt-2">
+              <p className="font-body f-foot text-[#2B2B2B] pt-2">
                 Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, &amp; Simi Valley
               </p>
             </div>
@@ -1231,8 +1219,8 @@ export default function Part1ClonePage() {
       {/* =========================================================================
           SECTION 11: SUB-FOOTER LEGAL BAR (Teal Accent #86B3B3 with white text)
       ========================================================================== */}
-      <div className="bg-[#86B3B3] text-white py-5 px-6 text-xs text-center font-body font-light tracking-wide">
-        <p>Terms | Privacy Policy | Disclaimer | Website by Walker Strategy Co.</p>
+      <div className="bg-[#86B3B3] text-white px-6 md:pl-[130px] font-body f-body min-h-[56px] flex items-center justify-start text-left">
+        <p className="f-foot">Terms | Privacy Policy | Disclaimer | Website by Walker Strategy Co.</p>
       </div>
     </div>
   );
