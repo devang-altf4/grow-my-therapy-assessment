@@ -46,7 +46,7 @@ export default function Part1ClonePage() {
       <header className="absolute top-0 left-0 right-0 bg-[#F6F4EE] w-full z-40 py-[1.4vw] flex items-center">
         <div className="w-full px-6 md:px-12 lg:px-[5vw] flex items-center justify-between">
           {/* Brand Logo */}
-          <Link href="/part-1" className="relative h-[75px] w-[257px] flex-shrink-0 block">
+          <Link href="/part-1" className="relative h-[48px] sm:h-[60px] lg:h-[75px] w-[180px] sm:w-[220px] lg:w-[257px] flex-shrink-0 block">
             <Image
               src="/assets/conejo/Conejo_Valley_Counseling_Logo.png"
               alt="Conejo Valley Family Counseling"
@@ -208,10 +208,10 @@ export default function Part1ClonePage() {
           SECTION 1: HERO (Authentic Squarespace Fluid Engine 24-Column Grid)
           Cols: 26 total (1 gutter + 24 cols + 1 gutter)
       ========================================================================== */}
-      <section className="relative w-full bg-[#F6F4EE] overflow-hidden pt-[86px] md:pt-[calc(75px+2.8vw)]">
-        {/* Mobile View (<768px) */}
-        <div className="md:hidden px-6 pt-6 pb-12 space-y-6">
-          <div className="relative aspect-[526/596] w-full overflow-hidden bg-[#E3D9CA]/30">
+      <section className="relative w-full bg-[#F6F4EE] overflow-hidden pt-[74px] sm:pt-[86px] lg:pt-[calc(75px+2.8vw)]">
+        {/* Mobile View (<1024px) */}
+        <div className="lg:hidden px-6 pt-6 pb-12 space-y-6 max-w-3xl mx-auto">
+          <div className="relative aspect-[526/596] max-w-md mx-auto w-full overflow-hidden bg-[#E3D9CA]/30">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__2866_29.jpg"
               alt="Therapy in Newbury Park"
@@ -223,12 +223,12 @@ export default function Part1ClonePage() {
           </div>
           <div className="space-y-4">
             <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
-              ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY<br />PARK &amp; ACROSS CA
+              ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY<br className="hidden sm:inline" /> PARK &amp; ACROSS CA
             </p>
             <h1 className="font-serif-heading f-h1 text-[#2B2B2B]">
-              Rebuild your foundation on<br />solid ground and finally<br />begin to <span className="font-script f-script text-[#86B3B3]">thrive.</span>
+              Rebuild your foundation on<br className="hidden sm:inline" /> solid ground and finally<br className="hidden sm:inline" /> begin to <span className="font-script f-script text-[#86B3B3]">thrive.</span>
             </h1>
-            <p className="font-body text-[16px] text-[#2B2B2B] font-light">
+            <p className="font-body text-[16px] text-[#2B2B2B] font-light leading-relaxed">
               Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
             </p>
             <div>
@@ -239,8 +239,8 @@ export default function Part1ClonePage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid (>=768px) */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 18 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 18 }}>
           {/* Left Image: 2 / 1 / 17 / 10 */}
           <div style={{ gridColumn: "1 / 10", gridRow: "2 / 17" }} className="fe-block relative overflow-hidden">
             <Image
@@ -300,7 +300,7 @@ export default function Part1ClonePage() {
       ========================================================================== */}
       <section className="w-full bg-[#F6F4EE] py-16 md:py-[7vmax] border-t border-[#E3D9CA]/40 overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-6">
+        <div className="lg:hidden px-6 space-y-6 max-w-3xl mx-auto">
           <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             You’re holding onto hope that life can be better than it is right now.
           </h2>
@@ -313,7 +313,7 @@ export default function Part1ClonePage() {
           <p className="font-body f-body text-[#2B2B2B]">
             First and foremost, we believe what you’re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
           </p>
-          <div className="relative aspect-[462/580] w-full overflow-hidden bg-[#E3D9CA]/30">
+          <div className="relative aspect-[462/580] max-w-md mx-auto w-full overflow-hidden bg-[#E3D9CA]/30">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__283_29.jpg"
               alt="Sandy beach with gentle ocean waves"
@@ -325,7 +325,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 17 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 17 }}>
           {/* H2 Heading: 4 / 3 / 8 / 16 */}
           <div style={{ gridColumn: "3 / 16", gridRow: "4 / 8" }} className="fe-block">
             <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
@@ -371,8 +371,8 @@ export default function Part1ClonePage() {
           Cards: Col 5-12, 12-19, 19-26 (Notice: 3 empty columns on left!)
       ========================================================================== */}
       <section className="bg-white py-16 md:py-[6.6vmax] overflow-hidden">
-        {/* Mobile View (<768px) */}
-        <div className="md:hidden px-6 space-y-12">
+        {/* Mobile View (<1024px) */}
+        <div className="lg:hidden px-6 space-y-12 max-w-5xl mx-auto">
           <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             Who we{" "}
             <span className="font-script f-script text-[#86B3B3]">
@@ -380,66 +380,68 @@ export default function Part1ClonePage() {
             </span>
           </h2>
 
-          {/* Column 1: Adults */}
-          <div className="space-y-4">
-            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
-              <Image
-                src="/assets/conejo/Jennifer_A_-_Images__288_29.jpg"
-                alt="Two people sitting on a log at the beach"
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-              />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {/* Column 1: Adults */}
+            <div className="space-y-4">
+              <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
+                <Image
+                  src="/assets/conejo/Jennifer_A_-_Images__288_29.jpg"
+                  alt="Two people sitting on a log at the beach"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
+                Adults
+              </h3>
+              <p className="font-body f-body text-[#2B2B2B]">
+                Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.
+              </p>
             </div>
-            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
-              Adults
-            </h3>
-            <p className="font-body f-body text-[#2B2B2B]">
-              Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.
-            </p>
-          </div>
 
-          {/* Column 2: Couples */}
-          <div className="space-y-4">
-            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
-              <Image
-                src="/assets/conejo/Jennifer_A_-_Images__289_29.jpg"
-                alt="A couple embracing on the beach"
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-              />
+            {/* Column 2: Couples */}
+            <div className="space-y-4">
+              <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
+                <Image
+                  src="/assets/conejo/Jennifer_A_-_Images__289_29.jpg"
+                  alt="A couple embracing on the beach"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
+                Couples
+              </h3>
+              <p className="font-body f-body text-[#2B2B2B]">
+                Relationships require effort, and we’re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.
+              </p>
             </div>
-            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
-              Couples
-            </h3>
-            <p className="font-body f-body text-[#2B2B2B]">
-              Relationships require effort, and we’re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.
-            </p>
-          </div>
 
-          {/* Column 3: Children & Teens */}
-          <div className="space-y-4">
-            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
-              <Image
-                src="/assets/conejo/Jennifer_A_-_Images__2810_29.jpg"
-                alt="A boy carrying a girl on a beach"
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-              />
+            {/* Column 3: Children & Teens */}
+            <div className="space-y-4">
+              <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
+                <Image
+                  src="/assets/conejo/Jennifer_A_-_Images__2810_29.jpg"
+                  alt="A boy carrying a girl on a beach"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
+                Children &amp; Teens
+              </h3>
+              <p className="font-body f-body text-[#2B2B2B]">
+                Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.
+              </p>
             </div>
-            <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">
-              Children &amp; Teens
-            </h3>
-            <p className="font-body f-body text-[#2B2B2B]">
-              Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.
-            </p>
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid (>=768px) */}
-        <div className="hidden md:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 21 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 21 }}>
           {/* Heading: 1 / 2 / 3 / 10 */}
           <div style={{ gridColumn: "2 / 10", gridRow: "1 / 3" }} className="fe-block">
             <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
@@ -538,7 +540,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Mobile View */}
-        <div className="md:hidden relative z-10 px-6 py-12 text-center text-white">
+        <div className="lg:hidden relative z-10 px-6 py-12 text-center text-white max-w-3xl mx-auto">
           <blockquote className="font-serif-heading f-h2 text-[#F6F4EE]">
             You deserve a place where your story is heard, valued, and understood.{" "}
             <em className="font-light italic text-[#F6F4EE]">
@@ -548,7 +550,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11 relative z-10" style={{ ["--row-count" as string]: 10 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11 relative z-10" style={{ ["--row-count" as string]: 10 }}>
           {/* Quote: 5 / 3 / 11 / 19 */}
           <div style={{ gridColumn: "3 / 19", gridRow: "5 / 11" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#F6F4EE]">
@@ -566,7 +568,7 @@ export default function Part1ClonePage() {
       ========================================================================== */}
       <section className="bg-white py-16 md:py-[8vmax] overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-8">
+        <div className="lg:hidden px-6 space-y-8 max-w-4xl mx-auto">
           <h3 className="font-serif-heading f-h3 text-[#2B2B2B]">
           Our areas of
             <br />
@@ -574,7 +576,7 @@ export default function Part1ClonePage() {
               expertise
             </span>
           </h3>
-          <div className="space-y-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 space-y-0">
             {[
               "DISSOCIATION",
               "TRAUMA",
@@ -600,7 +602,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 12 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 12 }}>
           {/* Title: 1 / 3 / 4 / 9 */}
           <div style={{ gridColumn: "3 / 9", gridRow: "1 / 4" }} className="fe-block fe-top">
             <h3 className="font-serif-heading f-h3 text-[#2B2B2B]">
@@ -657,14 +659,14 @@ export default function Part1ClonePage() {
       ========================================================================== */}
       <section className="w-full bg-[#E3D9CA] py-12 md:py-0 overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden px-6 py-16 space-y-6">
+        <div className="lg:hidden px-6 py-16 space-y-6 max-w-3xl mx-auto">
           <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
             HOW WE WORK
           </p>
           <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             We’re here to make a difference.
           </h2>
-          <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E3D9CA]/30">
+          <div className="relative aspect-[3/4] max-w-md mx-auto w-full overflow-hidden bg-[#E3D9CA]/30">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
               alt="A woman and a child in white dresses dancing on a sandy beach"
@@ -692,7 +694,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 24 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 24 }}>
           {/* Eyebrow: 4 / 3 / 6 / 15 */}
           <div style={{ gridColumn: "3 / 15", gridRow: "4 / 6" }} className="fe-block fe-top">
             <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
@@ -754,8 +756,8 @@ export default function Part1ClonePage() {
       ========================================================================== */}
       <section className="bg-white py-16 md:py-[6.6vmax] overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden space-y-6">
-          <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
+        <div className="lg:hidden space-y-6 max-w-4xl mx-auto">
+          <div className="relative aspect-[16/10] max-w-3xl mx-auto w-full overflow-hidden bg-neutral-100">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__285_29.jpg"
               alt="Family of four standing on a beach, holding hands, facing the ocean at sunset"
@@ -766,19 +768,19 @@ export default function Part1ClonePage() {
           </div>
           <div className="px-6 pb-12 space-y-4">
             <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
-              Honoring where you’ve<br />
+              Honoring where you’ve<br className="hidden sm:inline" />
               been{" "}
               <span className="font-script f-script text-[#86B3B3]">
                 &amp;
               </span>{" "}
-              helping shape<br />
+              helping shape<br className="hidden sm:inline" />
               where you’re headed.
             </h2>
           </div>
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 14 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 14 }}>
           {/* Left Image: 1 / 1 / 15 / 15 */}
           <div style={{ gridColumn: "1 / 15", gridRow: "1 / 15" }} className="fe-block relative overflow-hidden">
             <Image
@@ -813,7 +815,7 @@ export default function Part1ClonePage() {
       ========================================================================== */}
       <section className="bg-white border-t border-[#E3D9CA]/40 overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden px-6 py-16 space-y-10">
+        <div className="lg:hidden px-6 py-16 space-y-10 max-w-5xl mx-auto">
           <h3 className="font-serif-heading f-h3 text-[#2B2B2B]">
             Our{" "}
             <span className="font-script f-script text-[#86B3B3]">
@@ -822,7 +824,7 @@ export default function Part1ClonePage() {
             <br />
             include…
           </h3>
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="space-y-3">
               <h3 className="font-serif-heading f-h4 text-[#2B2B2B]">Trauma</h3>
               <p className="font-body f-body text-[#2B2B2B]">
@@ -863,7 +865,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 25 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 25 }}>
           {/* Title: 3 / 3 / 7 / 10 — reference authors a double space after
               "Our", which white-space: pre-wrap preserves and which is what
               breaks this heading onto two lines. */}
@@ -940,14 +942,14 @@ export default function Part1ClonePage() {
       ========================================================================== */}
       <section id="appointment" className="w-full bg-[#F6F4EE] py-16 md:py-[6.6vmax] overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-6 text-left">
+        <div className="lg:hidden px-6 space-y-6 text-left max-w-3xl mx-auto">
           <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
             SCHEDULE AN APPOINTMENT
           </p>
           <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
             Find a therapist who is the right fit for{"  "}<span className="font-script f-script text-[#86B3B3]">you</span>.
           </h2>
-          <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E3D9CA]/30">
+          <div className="relative aspect-[3/4] max-w-md mx-auto w-full overflow-hidden bg-[#E3D9CA]/30">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__2811_29.jpg"
               alt="A person in a striped dress pointing at shells on the sandy beach"
@@ -975,7 +977,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 16 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 16 }}>
           {/* Left Photo: 4 / 1 / 16 / 4 */}
           <div style={{ gridColumn: "1 / 4", gridRow: "4 / 16" }} className="fe-block relative overflow-hidden">
             <Image
@@ -1044,7 +1046,7 @@ export default function Part1ClonePage() {
       ========================================================================== */}
       <footer id="contact" className="bg-white py-16 md:py-[4.5vmax] border-t border-[#E3D9CA]/50 overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-10">
+        <div className="lg:hidden px-6 space-y-10 max-w-5xl mx-auto sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0">
           <div className="space-y-4">
             <div className="relative h-[60px] w-[240px]">
               <Image
@@ -1107,7 +1109,7 @@ export default function Part1ClonePage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 9 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 9 }}>
           {/* Logo: 1 / 2 / 5 / 9 */}
           <div style={{ gridColumn: "2 / 9", gridRow: "1 / 5" }} className="fe-block fe-top">
             <div className="relative w-full aspect-[492/144]">
@@ -1196,10 +1198,10 @@ export default function Part1ClonePage() {
           SECTION 11: SUB-FOOTER LEGAL BAR (Teal Accent #86B3B3 with white text)
       ========================================================================== */}
       <div className="bg-[#86B3B3] text-white py-3 md:py-[0.5vmax]">
-        <div className="md:hidden px-6 font-body f-foot">
+        <div className="lg:hidden px-6 font-body f-foot text-center sm:text-left">
           Terms | Privacy Policy | Disclaimer | Website by Walker Strategy Co.
         </div>
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 1 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 1 }}>
           {/* Legal: 1 / 2 / 2 / 26 — --tweak-text-block-padding of 0% 2% */}
           <div style={{ gridColumn: "2 / 26", gridRow: "1 / 2" }} className="fe-block fe-pad-2">
             <p className="font-body f-foot">Terms | Privacy Policy | Disclaimer | Website by Walker Strategy Co.</p>

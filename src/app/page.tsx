@@ -12,13 +12,13 @@ export default function AssignmentPortalPage() {
             <span className="font-semibold text-sm tracking-tight text-neutral-900">
               Grow My Therapy
             </span>
-            <span className="text-neutral-300">/</span>
-            <span className="text-xs text-neutral-500 font-medium">
+            <span className="text-neutral-300 hidden sm:inline">/</span>
+            <span className="text-xs text-neutral-500 font-medium hidden sm:inline">
               Internship Practical Assignment
             </span>
           </div>
 
-          <div className="text-xs text-neutral-500 font-medium">
+          <div className="text-xs text-neutral-500 font-medium shrink-0">
             Candidate: <strong className="text-neutral-900 font-semibold">Devang Gupta</strong>
           </div>
         </div>

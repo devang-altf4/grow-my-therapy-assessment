@@ -68,14 +68,18 @@ export default function Part2CreativeRedesignPage() {
           HEADER & NAVIGATION (Squarespace Luxury Editorial Aesthetic)
           Height: 129px, warm linen background, clean uppercase typography
       ========================================================================== */}
-      <header className="relative bg-[#F8F6F2] w-full z-40 h-[129px] flex items-center border-b border-[#E5DDD1]/40">
+      {/* =========================================================================
+          HEADER & NAVIGATION (Squarespace Luxury Editorial Aesthetic)
+          Height: responsive (80px mobile, 96px tablet, 129px desktop), warm linen background, clean uppercase typography
+      ========================================================================== */}
+      <header className="relative bg-[#F8F6F2] w-full z-40 h-[80px] sm:h-[96px] lg:h-[129px] flex items-center border-b border-[#E5DDD1]/40">
         <div className="w-full px-6 md:px-12 lg:px-[96px] flex items-center justify-between">
           {/* Brand Typographic Identity */}
           <Link href="/part-2" className="block flex-shrink-0 group">
-            <span className="font-serif-heading text-[22px] sm:text-[25px] font-light tracking-[-0.3px] text-[#242424] block leading-tight group-hover:text-[#A45D43] transition-colors">
+            <span className="font-serif-heading text-[19px] sm:text-[22px] lg:text-[25px] font-light tracking-[-0.3px] text-[#242424] block leading-tight group-hover:text-[#A45D43] transition-colors">
               Dr. Maya Reynolds, PsyD
             </span>
-            <span className="font-sans-nav text-[10px] sm:text-[11px] font-normal tracking-[2px] uppercase text-[#738A84] block mt-0.5">
+            <span className="font-sans-nav text-[9px] sm:text-[10px] lg:text-[11px] font-normal tracking-[1.5px] sm:tracking-[2px] uppercase text-[#738A84] block mt-0.5">
               Licensed Clinical Psychologist • Santa Monica, CA
             </span>
           </Link>
@@ -185,7 +189,7 @@ export default function Part2CreativeRedesignPage() {
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-[#F8F6F2] border-b border-[#E5DDD1] px-6 py-6 space-y-4 absolute top-[129px] left-0 w-full shadow-lg z-50">
+          <div className="lg:hidden bg-[#F8F6F2] border-b border-[#E5DDD1] px-6 py-6 space-y-4 absolute top-full left-0 w-full shadow-lg z-50">
             <div className="flex flex-col space-y-3 font-sans-nav text-xs uppercase tracking-wider font-normal">
               <a
                 href="#about"
@@ -235,14 +239,14 @@ export default function Part2CreativeRedesignPage() {
           Cols: 26 total (1 gutter + 24 cols + 1 gutter)
       ========================================================================== */}
       <section className="relative w-full bg-[#F8F6F2] overflow-hidden">
-        {/* Mobile View (<768px) */}
-        <div className="md:hidden px-6 pt-6 pb-12 space-y-6">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 pt-6 pb-12 space-y-6 max-w-3xl mx-auto">
           <div className="relative aspect-[526/596] w-full overflow-hidden bg-[#EFEBE3]">
             <Image
               src="/assets/Dr. Maya Reynolds.png"
               alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist in Santa Monica"
               fill
-              sizes="100vw"
+              sizes="(max-width: 1024px) 100vw, 36vw"
               className="object-cover object-top"
               priority
             />
@@ -252,7 +256,7 @@ export default function Part2CreativeRedesignPage() {
               ONLINE &amp; IN-PERSON THERAPY IN SANTA MONICA &amp; ACROSS CA
             </p>
             <h1 className="font-serif-heading f-h1 text-[#242424]">
-              Reclaim your calm, rebuild<br />your foundation, and finally<br />begin to{" "}
+              Reclaim your calm, rebuild<br className="hidden sm:inline" /> your foundation, and finally<br className="hidden sm:inline" /> begin to{" "}
               <span className="font-script f-script text-[#A45D43]">thrive.</span>
             </h1>
             <p className="font-body text-[16px] text-[#242424] font-light leading-relaxed">
@@ -266,8 +270,8 @@ export default function Part2CreativeRedesignPage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid (>=768px) */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 18 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 18 }}>
           {/* Left Hero Image: 1 / 1 / 19 / 10 */}
           <div style={{ gridColumn: "1 / 10", gridRow: "1 / 19" }} className="relative w-full h-full min-h-[520px]">
             <Image
@@ -336,8 +340,8 @@ export default function Part2CreativeRedesignPage() {
           SECTION 2: EMPATHY & NARRATIVE (Authentic 24-Column Grid)
       ========================================================================== */}
       <section className="w-full bg-[#F8F6F2] py-16 md:py-[4.5vmax] border-t border-[#E5DDD1]/50 overflow-hidden">
-        {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-6">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 space-y-6 max-w-3xl mx-auto">
           <h2 className="font-serif-heading text-[30px] font-light text-[#242424] leading-[1.24]">
             You’re holding onto hope that life can feel lighter and more grounded than it does right now.
           </h2>
@@ -355,14 +359,14 @@ export default function Part2CreativeRedesignPage() {
               src="/assets/conejo/Jennifer_A_-_Images__283_29.jpg"
               alt="Peaceful ocean waves along the Santa Monica coast"
               fill
-              sizes="100vw"
+              sizes="(max-width: 1024px) 100vw, 30vw"
               className="object-cover object-center"
             />
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 17 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 17 }}>
           {/* H2 Heading: 2 / 2 / 5 / 17 */}
           <div style={{ gridColumn: "2 / 17", gridRow: "2 / 5" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#242424]">
@@ -410,8 +414,8 @@ export default function Part2CreativeRedesignPage() {
           Editorial 3-Column Architecture matching Part 1
       ========================================================================== */}
       <section id="who-we-help" className="bg-white py-16 md:py-[4.5vmax] overflow-hidden border-t border-[#E5DDD1]/40">
-        {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-12">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 py-12 space-y-12 max-w-5xl mx-auto">
           <h2 className="font-serif-heading f-h2 text-[#242424]">
             Who we{" "}
             <span className="font-script f-script text-[#A45D43]">
@@ -419,66 +423,68 @@ export default function Part2CreativeRedesignPage() {
             </span>
           </h2>
 
-          {/* Column 1: High-Achieving Professionals */}
-          <div className="space-y-4">
-            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
-              <Image
-                src="/assets/maya/who-professionals.jpg"
-                alt="High-achieving adult reflecting in an inspiring workspace"
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-              />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {/* Column 1: High-Achieving Professionals */}
+            <div className="space-y-4">
+              <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
+                <Image
+                  src="/assets/maya/who-professionals.jpg"
+                  alt="High-achieving adult reflecting in an inspiring workspace"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <h3 className="font-serif-heading f-h4 text-[#242424]">
+                High-Achieving Professionals
+              </h3>
+              <p className="font-body f-body text-[#242424]">
+                Entrepreneurs, creatives, attorneys, and leaders feeling depleted by perfectionism, relentless internal pressure, and chronic burnout who want to reclaim sustainable balance.
+              </p>
             </div>
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              High-Achieving Professionals
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Entrepreneurs, creatives, attorneys, and leaders feeling depleted by perfectionism, relentless internal pressure, and chronic burnout who want to reclaim sustainable balance.
-            </p>
-          </div>
 
-          {/* Column 2: Adults with Anxiety & Panic */}
-          <div className="space-y-4">
-            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
-              <Image
-                src="/assets/maya/who-anxiety.jpg"
-                alt="Mindful person taking a deep breath of fresh air"
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-              />
+            {/* Column 2: Adults with Anxiety & Panic */}
+            <div className="space-y-4">
+              <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
+                <Image
+                  src="/assets/maya/who-anxiety.jpg"
+                  alt="Mindful person taking a deep breath of fresh air"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <h3 className="font-serif-heading f-h4 text-[#242424]">
+                Adults with Anxiety &amp; Panic
+              </h3>
+              <p className="font-body f-body text-[#242424]">
+                Individuals battling constant overthinking, racing thoughts, panic sensations, or nervous system dysregulation who crave grounded relief and practical regulation tools.
+              </p>
             </div>
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Adults with Anxiety &amp; Panic
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Individuals battling constant overthinking, racing thoughts, panic sensations, or nervous system dysregulation who crave grounded relief and practical regulation tools.
-            </p>
-          </div>
 
-          {/* Column 3: Individuals Healing from Trauma */}
-          <div className="space-y-4">
-            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
-              <Image
-                src="/assets/maya/who-trauma.jpg"
-                alt="Warm light symbolizing emotional safety and healing"
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-              />
+            {/* Column 3: Individuals Healing from Trauma */}
+            <div className="space-y-4">
+              <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
+                <Image
+                  src="/assets/maya/who-trauma.jpg"
+                  alt="Warm light symbolizing emotional safety and healing"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <h3 className="font-serif-heading f-h4 text-[#242424]">
+                Healing from Trauma &amp; Stress
+              </h3>
+              <p className="font-body f-body text-[#242424]">
+                Adults navigating the lingering impact of single-incident events or complex developmental experiences that continue to disrupt confidence, relationships, and emotional peace.
+              </p>
             </div>
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Healing from Trauma &amp; Stress
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Adults navigating the lingering impact of single-incident events or complex developmental experiences that continue to disrupt confidence, relationships, and emotional peace.
-            </p>
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid (>=768px) */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 21 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 21 }}>
           {/* Title: 1 / 2 / 6 / 5 */}
           <div style={{ gridColumn: "2 / 5", gridRow: "1 / 6" }} className="fe-block fe-top">
             <h2 className="font-serif-heading f-h2 text-[#242424]">
@@ -575,8 +581,8 @@ export default function Part2CreativeRedesignPage() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        {/* Mobile View */}
-        <div className="md:hidden relative z-10 px-6 py-12 text-center text-white">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden relative z-10 px-6 sm:px-12 py-12 text-center text-white max-w-4xl mx-auto">
           <blockquote className="font-serif-heading text-2xl font-light text-[#F8F6F2] leading-[1.38] tracking-tight">
             You deserve a quiet, sacred space where your story is heard, honored, and deeply understood.{" "}
             <em className="font-light italic text-[#F8F6F2]">
@@ -585,8 +591,8 @@ export default function Part2CreativeRedesignPage() {
           </blockquote>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11 relative z-10" style={{ ["--row-count" as string]: 10 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11 relative z-10" style={{ ["--row-count" as string]: 10 }}>
           <div style={{ gridColumn: "3 / 21", gridRow: "5 / 11" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#F8F6F2]">
               You deserve a quiet, sacred space where your story is heard, honored, and deeply understood. Nothing you bring is too heavy for us to carry together.
@@ -599,8 +605,8 @@ export default function Part2CreativeRedesignPage() {
           SECTION 5: OUR AREAS OF EXPERTISE (Pure White #FFFFFF)
       ========================================================================== */}
       <section className="bg-white py-16 md:py-[8vmax] overflow-hidden border-t border-[#E5DDD1]/40">
-        {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-8">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 py-12 space-y-8 max-w-5xl mx-auto">
           <h3 className="font-serif-heading f-h3 text-[#242424]">
             Our areas of
             <br />
@@ -608,7 +614,7 @@ export default function Part2CreativeRedesignPage() {
               expertise
             </span>
           </h3>
-          <div className="space-y-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8">
             {clinicalAreas.map((item) => (
               <div
                 key={item}
@@ -620,8 +626,8 @@ export default function Part2CreativeRedesignPage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 12 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 12 }}>
           {/* Title: 1 / 3 / 4 / 9 */}
           <div style={{ gridColumn: "3 / 9", gridRow: "1 / 4" }} className="fe-block fe-top">
             <h3 className="font-serif-heading f-h3 text-[#242424]">
@@ -675,8 +681,8 @@ export default function Part2CreativeRedesignPage() {
           Button: cols 3 to 19, rows 21 to 23
       ========================================================================== */}
       <section id="approach" className="w-full bg-[#EFEBE3] py-12 md:py-0 overflow-hidden border-t border-[#E5DDD1]/50">
-        {/* Mobile View */}
-        <div className="md:hidden px-6 py-16 space-y-6">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 py-16 space-y-6 max-w-3xl mx-auto">
           <p className="font-sans-nav f-eyebrow text-[#738A84]">
             OUR CLINICAL PHILOSOPHY
           </p>
@@ -688,7 +694,7 @@ export default function Part2CreativeRedesignPage() {
               src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
               alt="A joyous moment of connection and lightness on the beach"
               fill
-              sizes="100vw"
+              sizes="(max-width: 1024px) 100vw, 23vw"
               className="object-cover object-center"
             />
           </div>
@@ -710,8 +716,8 @@ export default function Part2CreativeRedesignPage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 24 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 24 }}>
           {/* Eyebrow: 4 / 3 / 6 / 15 */}
           <div style={{ gridColumn: "3 / 15", gridRow: "4 / 6" }} className="fe-block fe-top">
             <p className="font-sans-nav f-eyebrow text-[#738A84]">
@@ -772,14 +778,14 @@ export default function Part2CreativeRedesignPage() {
           Text: cols 16 to 26, rows 9 to 15
       ========================================================================== */}
       <section className="bg-white py-16 md:py-[6.6vmax] overflow-hidden border-t border-[#E5DDD1]/40">
-        {/* Mobile View */}
-        <div className="md:hidden space-y-6">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden space-y-6 max-w-3xl mx-auto">
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__285_29.jpg"
               alt="Serene ocean shoreline at sunset"
               fill
-              sizes="100vw"
+              sizes="(max-width: 1024px) 100vw, 54vw"
               className="object-cover object-center"
             />
           </div>
@@ -795,8 +801,8 @@ export default function Part2CreativeRedesignPage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 14 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 14 }}>
           {/* Left Image: 1 / 1 / 15 / 15 */}
           <div style={{ gridColumn: "1 / 15", gridRow: "1 / 15" }} className="fe-block relative overflow-hidden">
             <Image
@@ -830,8 +836,8 @@ export default function Part2CreativeRedesignPage() {
           Col 2 (Nervous System): cols 19 to 26, rows 15 to 25
       ========================================================================== */}
       <section id="specialties" className="bg-white border-t border-[#E5DDD1]/40 overflow-hidden">
-        {/* Mobile View */}
-        <div className="md:hidden px-6 py-16 space-y-10">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 py-16 space-y-10 max-w-5xl mx-auto">
           <h3 className="font-serif-heading f-h3 text-[#242424]">
             Our{" "}
             <span className="font-script f-script text-[#A45D43]">
@@ -840,7 +846,7 @@ export default function Part2CreativeRedesignPage() {
             <br />
             include…
           </h3>
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="space-y-3">
               <h3 className="font-serif-heading f-h4 text-[#242424]">
                 Anxiety &amp; Panic Therapy
@@ -896,8 +902,8 @@ export default function Part2CreativeRedesignPage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 25 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 25 }}>
           {/* Title: 3 / 3 / 7 / 10 */}
           <div style={{ gridColumn: "3 / 10", gridRow: "3 / 7" }} className="fe-block">
             <h3 className="font-serif-heading f-h3 text-[#242424]">
@@ -969,15 +975,15 @@ export default function Part2CreativeRedesignPage() {
           Right Photo: cols 18 to 27 (flush right), rows 1 to 16
       ========================================================================== */}
       <section id="appointment" className="w-full bg-[#F8F6F2] py-16 md:py-[6.6vmax] overflow-hidden border-t border-[#E5DDD1]/50">
-        {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-6 text-left">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 space-y-6 text-left max-w-3xl mx-auto">
           <p className="font-sans-nav f-eyebrow text-[#738A84]">
             SCHEDULE A CONSULTATION
           </p>
           <h2 className="font-serif-heading f-h2 text-[#242424]">
             Find a therapist who is the
-            <br />
-            right fit for{" "}
+            <br className="hidden sm:inline" />
+            {" "}right fit for{" "}
             <span className="font-script f-script text-[#A45D43]">
               you
             </span>
@@ -988,7 +994,7 @@ export default function Part2CreativeRedesignPage() {
               src="/assets/conejo/Jennifer_A_-_Images__2811_29.jpg"
               alt="Peaceful beach sand and calming shore"
               fill
-              sizes="100vw"
+              sizes="(max-width: 1024px) 100vw, 35vw"
               className="object-cover object-center"
             />
           </div>
@@ -1007,8 +1013,8 @@ export default function Part2CreativeRedesignPage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 16 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 16 }}>
           {/* Left Photo: 4 / 1 / 16 / 4 */}
           <div style={{ gridColumn: "1 / 4", gridRow: "4 / 16" }} className="fe-block relative overflow-hidden">
             <Image
@@ -1095,7 +1101,7 @@ export default function Part2CreativeRedesignPage() {
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full flex items-center justify-between text-left group cursor-pointer"
                 >
-                  <span className="font-serif-heading text-[20px] sm:text-[23px] font-light text-[#242424] group-hover:text-[#A45D43] transition-colors pr-6">
+                  <span className="font-serif-heading text-[18px] sm:text-[21px] lg:text-[23px] font-light text-[#242424] group-hover:text-[#A45D43] transition-colors pr-4 sm:pr-6">
                     {faq.q}
                   </span>
                   <span className="text-[#A45D43] flex-shrink-0">
@@ -1103,7 +1109,7 @@ export default function Part2CreativeRedesignPage() {
                   </span>
                 </button>
                 {openFaq === idx && (
-                  <div className="pt-4 pr-6 text-[16px] font-body font-light text-[#444] leading-[28px]">
+                  <div className="pt-4 pr-4 sm:pr-6 text-[15px] sm:text-[16px] font-body font-light text-[#444] leading-[26px] sm:leading-[28px]">
                     <p>{faq.a}</p>
                   </div>
                 )}
@@ -1117,7 +1123,7 @@ export default function Part2CreativeRedesignPage() {
           SECTION 12: INTERACTIVE CONSULTATION FORM (Warm Dune Sand #EFEBE3)
       ========================================================================== */}
       <section id="consultation" className="bg-[#EFEBE3] py-16 md:py-[5.5vmax] border-t border-[#E5DDD1]/50 overflow-hidden">
-        <div className="max-w-3xl mx-auto px-6 md:px-12 space-y-8">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 md:px-12 space-y-8">
           <div className="text-center space-y-3">
             <p className="font-sans-nav f-eyebrow text-[#738A84]">
               GET IN TOUCH
@@ -1131,7 +1137,7 @@ export default function Part2CreativeRedesignPage() {
           </div>
 
           {formSubmitted ? (
-            <div className="bg-[#F8F6F2] border border-[#A45D43]/40 p-8 text-center space-y-4">
+            <div className="bg-[#F8F6F2] border border-[#A45D43]/40 p-6 sm:p-8 text-center space-y-4">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#A45D43]/10 text-[#A45D43] mx-auto">
                 <Check className="w-6 h-6" />
               </div>
@@ -1143,7 +1149,7 @@ export default function Part2CreativeRedesignPage() {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleFormSubmit} className="space-y-6 bg-[#F8F6F2] p-8 md:p-10 border border-[#E5DDD1]">
+            <form onSubmit={handleFormSubmit} className="space-y-6 bg-[#F8F6F2] p-6 sm:p-8 md:p-10 border border-[#E5DDD1]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block font-sans-nav text-[12px] uppercase tracking-[1.2px] text-[#444] mb-2">
@@ -1251,8 +1257,8 @@ export default function Part2CreativeRedesignPage() {
           4 Columns: Brand/Intro, Navigate, Specialties, Contact
       ========================================================================== */}
       <footer id="about" className="bg-white py-16 md:py-[4.5vmax] border-t border-[#E5DDD1]/50 overflow-hidden">
-        {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-10">
+        {/* Mobile & Tablet View (<1024px) */}
+        <div className="lg:hidden px-6 sm:px-12 space-y-10 max-w-5xl mx-auto sm:grid sm:grid-cols-2 sm:gap-10 sm:space-y-0">
           <div className="space-y-4">
             <span className="font-serif-heading text-[22px] font-light tracking-[-0.3px] text-[#242424] block">
               Dr. Maya Reynolds, PsyD
@@ -1315,8 +1321,8 @@ export default function Part2CreativeRedesignPage() {
           </div>
         </div>
 
-        {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 9 }}>
+        {/* Desktop 24-Column Fluid Grid (>=1024px) */}
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 9 }}>
           {/* Brand/Identity: 1 / 2 / 5 / 9 */}
           <div style={{ gridColumn: "2 / 9", gridRow: "1 / 4" }} className="fe-block fe-top">
             <div className="space-y-1">
@@ -1404,10 +1410,10 @@ export default function Part2CreativeRedesignPage() {
           SECTION 14: SUB-FOOTER LEGAL BAR (Santa Monica Terracotta Accent #A45D43)
       ========================================================================== */}
       <div className="bg-[#A45D43] text-white py-3 md:py-[0.5vmax]">
-        <div className="md:hidden px-6 font-body f-foot">
+        <div className="lg:hidden px-6 sm:px-12 py-3 text-center sm:text-left font-body f-foot">
           © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All Rights Reserved. | Terms &amp; Conditions | Privacy Policy | Notice of Privacy Practices | Santa Monica, CA
         </div>
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 1 }}>
+        <div className="hidden lg:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 1 }}>
           <div style={{ gridColumn: "2 / 26", gridRow: "1 / 2" }} className="fe-block fe-pad-2">
             <p className="font-body f-foot">© {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All Rights Reserved. | Terms &amp; Conditions | Privacy Policy | Notice of Privacy Practices | Santa Monica, CA</p>
           </div>
