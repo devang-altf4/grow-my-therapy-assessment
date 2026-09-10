@@ -177,7 +177,7 @@
   text-transform: uppercase;
   letter-spacing: .12em;
   font-size: calc(15px - 0.18vw);
-  line-height: 1.2em;
+  line-height: normal;
   padding: 15px 19.5px;
   color: #242424;
   background-color: transparent;
@@ -203,7 +203,7 @@
   text-transform: uppercase;
   letter-spacing: .12em;
   font-size: calc(15px - 0.18vw);
-  line-height: 1.2em;
+  line-height: normal;
   padding: 9px 0;
   color: #242424;
   transform: perspective(1px) translateZ(0);

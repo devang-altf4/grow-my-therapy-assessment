@@ -267,9 +267,9 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid (>=768px) */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "560px" }}>
-          {/* Left Image: col 1 to 10 (flush to left edge), row 2 to 17 */}
-          <div style={{ gridColumn: "1 / 10", gridRow: "2 / 17" }} className="relative w-full h-full min-h-[520px]">
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 18 }}>
+          {/* Left Hero Image: 1 / 1 / 19 / 10 */}
+          <div style={{ gridColumn: "1 / 10", gridRow: "1 / 19" }} className="relative w-full h-full min-h-[520px]">
             <Image
               src="/assets/Dr. Maya Reynolds.png"
               alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
@@ -280,44 +280,46 @@ export default function Part2CreativeRedesignPage() {
             />
           </div>
 
-          {/* Eyebrow: col 12 to 24, row 2 to 4 */}
-          <div style={{ gridColumn: "12 / 24", gridRow: "2 / 4" }} className="flex items-end pb-2">
+          {/* Eyebrow: 2 / 11 / 4 / 24 */}
+          <div style={{ gridColumn: "11 / 24", gridRow: "2 / 4" }} className="fe-block fe-bottom">
             <p className="font-sans-nav f-eyebrow text-[#738A84]">
               ONLINE &amp; IN-PERSON THERAPY IN SANTA MONICA &amp; ACROSS CA
             </p>
           </div>
 
-          {/* H1 Heading & Paragraph: col 12 to 24, row 6 to 15 */}
-          <div style={{ gridColumn: "12 / 24", gridRow: "6 / 15" }} className="flex flex-col justify-center space-y-4">
+          {/* H1 Heading: 6 / 11 / 14 / 24 */}
+          <div style={{ gridColumn: "11 / 24", gridRow: "6 / 14" }} className="fe-block fe-top">
             <h1 className="font-serif-heading f-h1 text-[#242424]">
-              <span className="inline">Reclaim your calm, rebuild</span>
-              <br />
-              <span className="inline">your foundation, and finally</span>
-              <br />
-              <span className="inline">
-                begin to{" "}
-                <span className="font-script f-script text-[#A45D43]">
-                  thrive.
-                </span>
+              Reclaim your calm, rebuild<br />
+              your foundation, and finally<br />
+              begin to{" "}
+              <span className="font-script f-script text-[#A45D43]">
+                thrive.
               </span>
             </h1>
-            <p className="font-body f-body text-[#242424] max-w-xl">
+          </div>
+
+          {/* Body: 14 / 11 / 16 / 24 */}
+          <div style={{ gridColumn: "11 / 24", gridRow: "14 / 16" }} className="fe-block fe-top">
+            <p className="font-body f-body text-[#242424]">
               Specialized psychological therapy for high-achieving adults navigating anxiety, trauma, and burnout. Combining practical tools with deep, lasting healing.
             </p>
           </div>
 
-          {/* Button CTA: col 12 to 24, row 15 to 17 */}
-          <div style={{ gridColumn: "12 / 24", gridRow: "15 / 17" }} className="pt-2">
-            <a
-              href="#consultation"
-              className="maya-btn-underline"
-            >
-              SCHEDULE A CONSULTATION
-            </a>
+          {/* Button CTA: 17 / 11 / 18 / 24 */}
+          <div style={{ gridColumn: "11 / 24", gridRow: "17 / 18" }} className="fe-block fe-top">
+            <div>
+              <a
+                href="#consultation"
+                className="maya-btn-underline"
+              >
+                SCHEDULE A CONSULTATION
+              </a>
+            </div>
           </div>
 
-          {/* Right Image: Coastal Accent: col 25 to 27 (flush right), row 7 to 17 */}
-          <div style={{ gridColumn: "25 / 27", gridRow: "7 / 17" }} className="relative w-full h-full min-h-[380px] overflow-hidden">
+          {/* Right Hero Image: 7 / 25 / 19 / 27 */}
+          <div style={{ gridColumn: "25 / 27", gridRow: "7 / 19" }} className="relative w-full h-full min-h-[380px] overflow-hidden">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__2867_29.jpg"
               alt="Peaceful California coastline"
@@ -333,7 +335,7 @@ export default function Part2CreativeRedesignPage() {
       {/* =========================================================================
           SECTION 2: EMPATHY & NARRATIVE (Authentic 24-Column Grid)
       ========================================================================== */}
-      <section className="w-full bg-[#F8F6F2] py-16 lg:py-24 border-t border-[#E5DDD1]/50 overflow-hidden">
+      <section className="w-full bg-[#F8F6F2] py-16 md:py-[4.5vmax] border-t border-[#E5DDD1]/50 overflow-hidden">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-6">
           <h2 className="font-serif-heading text-[30px] font-light text-[#242424] leading-[1.24]">
@@ -360,34 +362,38 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-20" style={{ minHeight: "560px" }}>
-          {/* H2 Heading: col 3 to 17, row 4 to 8 */}
-          <div style={{ gridColumn: "3 / 17", gridRow: "4 / 8" }} className="flex items-end pb-3">
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 17 }}>
+          {/* H2 Heading: 2 / 2 / 5 / 17 */}
+          <div style={{ gridColumn: "2 / 17", gridRow: "2 / 5" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#242424]">
               You’re holding onto hope that life can
               <br /> feel lighter and more grounded.
             </h2>
           </div>
 
-          {/* Col 1 Text: col 3 to 10, row 9 to 16 */}
-          <div style={{ gridColumn: "3 / 10", gridRow: "9 / 16" }} className="space-y-4 pr-2">
-            <p className="font-sans-nav f-caps text-[#242424]">
-              At our Santa Monica practice, our goal is to help you turn that hope into lasting reality.
-            </p>
-            <p className="font-body f-body text-[#242424]">
-              Many of the people I work with are high-achieving, thoughtful, and deeply self-aware—yet internally feel exhausted, trapped in cycles of overthinking, or emotionally on edge. You may look completely composed to the outside world while quietly carrying chronic worry or persistent tension.
-            </p>
+          {/* Col 1 Text: 6 / 2 / 16 / 10 */}
+          <div style={{ gridColumn: "2 / 10", gridRow: "6 / 16" }} className="fe-block fe-top fe-pad-6">
+            <div className="fe-rte">
+              <p className="font-sans-nav f-eyebrow text-[#242424]">
+                AT OUR SANTA MONICA PRACTICE, OUR GOAL IS TO HELP YOU TURN THAT HOPE INTO LASTING REALITY.
+              </p>
+              <p className="font-body f-body text-[#242424]">
+                Many of the people I work with are high-achieving, thoughtful, and deeply self-aware—yet internally feel exhausted, trapped in cycles of overthinking, or emotionally on edge. You may look completely composed to the outside world while quietly carrying chronic worry or persistent tension.
+              </p>
+            </div>
           </div>
 
-          {/* Col 2 Text: col 10 to 17, row 9 to 17 */}
-          <div style={{ gridColumn: "10 / 17", gridRow: "9 / 17" }} className="space-y-3 px-2">
-            <p className="font-body f-body text-[#242424]">
-              First and foremost, what you are experiencing is real, valid, and worthy of compassionate, expert support. Whether you are navigating past trauma, persistent anxiety, or the heavy weight of burnout, you don&apos;t have to carry it in isolation. Together, we create a safe, steady container to help you find your footing again and build a deeply resilient future.
-            </p>
+          {/* Col 2 Text: 6 / 10 / 16 / 18 */}
+          <div style={{ gridColumn: "10 / 18", gridRow: "6 / 16" }} className="fe-block fe-top fe-pad-6">
+            <div className="fe-rte">
+              <p className="font-body f-body text-[#242424]">
+                First and foremost, what you are experiencing is real, valid, and worthy of compassionate, expert support. Whether you are navigating past trauma, persistent anxiety, or the heavy weight of burnout, you don&apos;t have to carry it in isolation. Together, we create a safe, steady container to help you find your footing again and build a deeply resilient future.
+              </p>
+            </div>
           </div>
 
-          {/* Right Ocean Image: col 19 to 27 (flush right), row 1 to 17 */}
-          <div style={{ gridColumn: "19 / 27", gridRow: "1 / 17" }} className="relative w-full h-full min-h-[500px]">
+          {/* Right Ocean Image: 1 / 19 / 18 / 27 (flush right) */}
+          <div style={{ gridColumn: "19 / 27", gridRow: "1 / 18" }} className="relative w-full h-full min-h-[500px]">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__283_29.jpg"
               alt="Peaceful ocean waves along the Santa Monica coast"
@@ -403,7 +409,7 @@ export default function Part2CreativeRedesignPage() {
           SECTION 3: WHO WE HELP (Pure White #FFFFFF)
           Editorial 3-Column Architecture matching Part 1
       ========================================================================== */}
-      <section id="who-we-help" className="bg-white py-16 lg:py-24 overflow-hidden border-t border-[#E5DDD1]/40">
+      <section id="who-we-help" className="bg-white py-16 md:py-[4.5vmax] overflow-hidden border-t border-[#E5DDD1]/40">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-12">
           <h2 className="font-serif-heading f-h2 text-[#242424]">
@@ -415,7 +421,7 @@ export default function Part2CreativeRedesignPage() {
 
           {/* Column 1: High-Achieving Professionals */}
           <div className="space-y-4">
-            <div className="relative aspect-[1105/1683] w-full overflow-hidden bg-neutral-100 mb-4">
+            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
               <Image
                 src="/assets/maya/who-professionals.jpg"
                 alt="High-achieving adult reflecting in an inspiring workspace"
@@ -434,7 +440,7 @@ export default function Part2CreativeRedesignPage() {
 
           {/* Column 2: Adults with Anxiety & Panic */}
           <div className="space-y-4">
-            <div className="relative aspect-[1105/1683] w-full overflow-hidden bg-neutral-100 mb-4">
+            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
               <Image
                 src="/assets/maya/who-anxiety.jpg"
                 alt="Mindful person taking a deep breath of fresh air"
@@ -453,7 +459,7 @@ export default function Part2CreativeRedesignPage() {
 
           {/* Column 3: Individuals Healing from Trauma */}
           <div className="space-y-4">
-            <div className="relative aspect-[1105/1683] w-full overflow-hidden bg-neutral-100 mb-4">
+            <div className="relative aspect-[373/424] w-full overflow-hidden bg-neutral-100 mb-4">
               <Image
                 src="/assets/maya/who-trauma.jpg"
                 alt="Warm light symbolizing emotional safety and healing"
@@ -472,9 +478,9 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid (>=768px) */}
-        <div className="hidden md:grid sqs-fluid-grid-20" style={{ minHeight: "750px" }}>
-          {/* Heading: col 2 to 10, row 1 to 3 */}
-          <div style={{ gridColumn: "2 / 10", gridRow: "1 / 3" }} className="flex items-center">
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 21 }}>
+          {/* Title: 1 / 2 / 6 / 5 */}
+          <div style={{ gridColumn: "2 / 5", gridRow: "1 / 6" }} className="fe-block fe-top">
             <h2 className="font-serif-heading f-h2 text-[#242424]">
               Who we{" "}
               <span className="font-script f-script text-[#A45D43]">
@@ -483,67 +489,73 @@ export default function Part2CreativeRedesignPage() {
             </h2>
           </div>
 
-          {/* Card 1 Photo: col 5 to 12, row 4 to 15 */}
-          <div style={{ gridColumn: "5 / 12", gridRow: "4 / 15" }} className="relative w-full h-full min-h-[380px] overflow-hidden">
+          {/* Card 1 Photo: 4 / 5 / 15 / 12 */}
+          <div style={{ gridColumn: "5 / 12", gridRow: "4 / 15" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/maya/who-professionals.jpg"
               alt="High-achieving professional reflecting"
               fill
-              sizes="(max-width: 1024px) 30vw, 25vw"
+              sizes="26vw"
               className="object-cover object-center"
             />
           </div>
 
-          {/* Card 1 Text: col 5 to 12, row 16 to 21 */}
-          <div style={{ gridColumn: "5 / 12", gridRow: "16 / 21" }} className="space-y-3 pt-2">
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              High-Achieving Professionals
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Entrepreneurs, creatives, and leaders feeling depleted by perfectionism, relentless internal pressure, and chronic burnout who want to reclaim sustainable balance.
-            </p>
+          {/* Card 1 Text: 16 / 5 / 22 / 12 */}
+          <div style={{ gridColumn: "5 / 12", gridRow: "16 / 22" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <h3 className="font-serif-heading f-h4 text-[#242424]">
+                High-Achieving Professionals
+              </h3>
+              <p className="font-body f-body text-[#242424]">
+                Entrepreneurs, creatives, and leaders feeling depleted by perfectionism, relentless internal pressure, and chronic burnout who want to reclaim sustainable balance.
+              </p>
+            </div>
           </div>
 
-          {/* Card 2 Photo: col 12 to 19, row 4 to 15 */}
-          <div style={{ gridColumn: "12 / 19", gridRow: "4 / 15" }} className="relative w-full h-full min-h-[380px] overflow-hidden">
+          {/* Card 2 Photo: 4 / 12 / 15 / 19 */}
+          <div style={{ gridColumn: "12 / 19", gridRow: "4 / 15" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/maya/who-anxiety.jpg"
               alt="Person experiencing calm and steady breathing"
               fill
-              sizes="(max-width: 1024px) 30vw, 25vw"
+              sizes="26vw"
               className="object-cover object-center"
             />
           </div>
 
-          {/* Card 2 Text: col 12 to 19, row 16 to 22 */}
-          <div style={{ gridColumn: "12 / 19", gridRow: "16 / 22" }} className="space-y-3 pt-2">
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Adults with Anxiety &amp; Panic
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Individuals battling constant overthinking, racing thoughts, panic sensations, or nervous system dysregulation who crave grounded relief and practical regulation tools.
-            </p>
+          {/* Card 2 Text: 16 / 12 / 22 / 19 */}
+          <div style={{ gridColumn: "12 / 19", gridRow: "16 / 22" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <h3 className="font-serif-heading f-h4 text-[#242424]">
+                Adults with Anxiety &amp; Panic
+              </h3>
+              <p className="font-body f-body text-[#242424]">
+                Individuals battling constant overthinking, racing thoughts, panic sensations, or nervous system dysregulation who crave grounded relief and practical regulation tools.
+              </p>
+            </div>
           </div>
 
-          {/* Card 3 Photo: col 19 to 26, row 4 to 15 */}
-          <div style={{ gridColumn: "19 / 26", gridRow: "4 / 15" }} className="relative w-full h-full min-h-[380px] overflow-hidden">
+          {/* Card 3 Photo: 4 / 19 / 15 / 26 */}
+          <div style={{ gridColumn: "19 / 26", gridRow: "4 / 15" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/maya/who-trauma.jpg"
               alt="Warm coastal sunlight symbolizing renewal"
               fill
-              sizes="(max-width: 1024px) 30vw, 25vw"
+              sizes="26vw"
               className="object-cover object-center"
             />
           </div>
 
-          {/* Card 3 Text: col 19 to 26, row 16 to 22 */}
-          <div style={{ gridColumn: "19 / 26", gridRow: "16 / 22" }} className="space-y-3 pt-2">
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Healing from Trauma &amp; Stress
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Adults navigating the lingering impact of single-incident events or complex developmental experiences that continue to disrupt confidence, relationships, and emotional peace.
-            </p>
+          {/* Card 3 Text: 16 / 19 / 22 / 26 */}
+          <div style={{ gridColumn: "19 / 26", gridRow: "16 / 22" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <h3 className="font-serif-heading f-h4 text-[#242424]">
+                Healing from Trauma &amp; Stress
+              </h3>
+              <p className="font-body f-body text-[#242424]">
+                Adults navigating the lingering impact of single-incident events or complex developmental experiences that continue to disrupt confidence, relationships, and emotional peace.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -551,7 +563,7 @@ export default function Part2CreativeRedesignPage() {
       {/* =========================================================================
           SECTION 4: QUOTE BANNER (Full-bleed photographic backdrop)
       ========================================================================== */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section className="relative py-20 md:py-[6.6vmax] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -574,13 +586,10 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11 relative z-10" style={{ minHeight: "340px" }}>
-          <div style={{ gridColumn: "3 / 21", gridRow: "5 / 11" }} className="flex items-center">
+        <div className="hidden md:grid sqs-fluid-grid-11 relative z-10" style={{ ["--row-count" as string]: 10 }}>
+          <div style={{ gridColumn: "3 / 21", gridRow: "5 / 11" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#F8F6F2]">
-              You deserve a quiet, sacred space where your story is heard, honored, and deeply understood.{" "}
-              <em className="font-light italic text-[#F8F6F2]">
-                Nothing you bring is too heavy for us to carry together.
-              </em>
+              You deserve a quiet, sacred space where your story is heard, honored, and deeply understood. Nothing you bring is too heavy for us to carry together.
             </h2>
           </div>
         </div>
@@ -589,16 +598,16 @@ export default function Part2CreativeRedesignPage() {
       {/* =========================================================================
           SECTION 5: OUR AREAS OF EXPERTISE (Pure White #FFFFFF)
       ========================================================================== */}
-      <section className="bg-white py-16 lg:py-24 overflow-hidden border-t border-[#E5DDD1]/40">
+      <section className="bg-white py-16 md:py-[8vmax] overflow-hidden border-t border-[#E5DDD1]/40">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-8">
-          <h2 className="font-serif-heading f-h2 text-[#242424]">
+          <h3 className="font-serif-heading f-h3 text-[#242424]">
             Our areas of
             <br />
             <span className="font-script f-script text-[#A45D43]">
               expertise
             </span>
-          </h2>
+          </h3>
           <div className="space-y-0">
             {clinicalAreas.map((item) => (
               <div
@@ -612,48 +621,60 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "480px" }}>
-          {/* Title: col 3 to 9, row 1 to 4 */}
-          <div style={{ gridColumn: "3 / 9", gridRow: "1 / 4" }} className="flex items-start">
-            <h2 className="font-serif-heading f-h2 text-[#242424]">
-              Our areas of
-              <br />
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 12 }}>
+          {/* Title: 1 / 3 / 4 / 9 */}
+          <div style={{ gridColumn: "3 / 9", gridRow: "1 / 4" }} className="fe-block fe-top">
+            <h3 className="font-serif-heading f-h3 text-[#242424]">
+              Our areas of{" "}
               <span className="font-script f-script text-[#A45D43]">
                 expertise
               </span>
-            </h2>
+            </h3>
           </div>
 
-          {/* Left Column: col 10 to 18, row 1 to 13 */}
-          <div style={{ gridColumn: "10 / 18", gridRow: "1 / 13" }} className="flex flex-col justify-between">
-            {clinicalAreas.slice(0, 6).map((item) => (
-              <div
-                key={item}
-                className="py-3.5 text-[14px] lg:text-[15px] font-sans-nav font-normal uppercase tracking-[1.8px] text-[#242424] border-b border-[#E5DDD1]"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-
-          {/* Right Column: col 19 to 27, row 1 to 13 */}
-          <div style={{ gridColumn: "19 / 27", gridRow: "1 / 13" }} className="flex flex-col justify-between">
-            {clinicalAreas.slice(6).map((item) => (
-              <div
-                key={item}
-                className="py-3.5 text-[14px] lg:text-[15px] font-sans-nav font-normal uppercase tracking-[1.8px] text-[#242424] border-b border-[#E5DDD1]"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
+          {/* Two columns of clinical terms with exact 2-row blocks and 1-row dividers */}
+          {[
+            { col: "10 / 18", rule: "10 / 17", items: clinicalAreas.slice(0, 6) },
+            { col: "18 / 26", rule: "18 / 25", items: clinicalAreas.slice(6) },
+          ].flatMap(({ col, rule, items }) =>
+            items.flatMap((item, idx) => {
+              const row = idx * 2 + 1;
+              const nodes = [
+                <div
+                  key={item}
+                  style={{ gridColumn: col, gridRow: `${row} / ${row + 2}` }}
+                  className="fe-block fe-top"
+                >
+                  <p className="font-sans-nav f-caps text-[#242424]">{item}</p>
+                </div>,
+              ];
+              if (idx < items.length - 1) {
+                nodes.push(
+                  <div
+                    key={`${item}-rule`}
+                    style={{ gridColumn: rule, gridRow: `${row + 1} / ${row + 2}` }}
+                    className="fe-block"
+                  >
+                    <hr className="h-px w-full border-0 bg-[#E5DDD1]/50" />
+                  </div>
+                );
+              }
+              return nodes;
+            })
+          )}
         </div>
       </section>
 
       {/* =========================================================================
           SECTION 6: HOW WE WORK (Warm Dune Sand #EFEBE3)
+          Eyebrow: cols 3 to 15, rows 4 to 6
+          Heading: cols 3 to 20, rows 8 to 10
+          Image: cols 21 to 27 (flush right edge), rows 4 to 22
+          Text 1: cols 3 to 11, rows 11 to 20
+          Text 2: cols 11 to 19, rows 11 to 20
+          Button: cols 3 to 19, rows 21 to 23
       ========================================================================== */}
-      <section id="approach" className="w-full bg-[#EFEBE3] py-12 lg:py-16 overflow-hidden border-t border-[#E5DDD1]/50">
+      <section id="approach" className="w-full bg-[#EFEBE3] py-12 md:py-0 overflow-hidden border-t border-[#E5DDD1]/50">
         {/* Mobile View */}
         <div className="md:hidden px-6 py-16 space-y-6">
           <p className="font-sans-nav f-eyebrow text-[#738A84]">
@@ -684,57 +705,60 @@ export default function Part2CreativeRedesignPage() {
           </div>
           <div>
             <a href="#about" className="maya-btn-underline">
-              LEARN MORE ABOUT DR. MAYA
+              LEARN MORE ABOUT DR. MAYA REYNOLDS
             </a>
           </div>
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-20" style={{ minHeight: "750px" }}>
-          {/* Eyebrow: col 3 to 15, row 4 to 6 */}
-          <div style={{ gridColumn: "3 / 15", gridRow: "4 / 6" }} className="flex items-end pb-1">
+        <div className="hidden md:grid sqs-fluid-grid-20" style={{ ["--row-count" as string]: 24 }}>
+          {/* Eyebrow: 4 / 3 / 6 / 15 */}
+          <div style={{ gridColumn: "3 / 15", gridRow: "4 / 6" }} className="fe-block fe-top">
             <p className="font-sans-nav f-eyebrow text-[#738A84]">
               OUR CLINICAL PHILOSOPHY
             </p>
           </div>
 
-          {/* H2 Heading: col 3 to 20, row 8 to 10 */}
-          <div style={{ gridColumn: "3 / 20", gridRow: "8 / 10" }} className="flex items-center">
+          {/* H2 Heading: 8 / 3 / 10 / 20 */}
+          <div style={{ gridColumn: "3 / 20", gridRow: "8 / 10" }} className="fe-block">
             <h2 className="font-serif-heading f-h2 text-[#242424]">
               A warm, collaborative, and grounded approach to therapy.
             </h2>
           </div>
 
-          {/* Right Image: col 21 to 27 (flush right), row 4 to 22 */}
-          <div style={{ gridColumn: "21 / 27", gridRow: "4 / 22" }} className="relative w-full h-full min-h-[520px] overflow-hidden bg-[#E5DDD1]">
+          {/* Right Image: 4 / 21 / 22 / 27 */}
+          <div style={{ gridColumn: "21 / 27", gridRow: "4 / 22" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
               alt="A joyous moment of connection and lightness on the beach"
               fill
-              sizes="(max-width: 1024px) 35vw, 28vw"
-              className="object-cover object-center"
+              sizes="23vw"
+              className="object-cover"
+              style={{ objectPosition: "21.6259% 45.6029%" }}
             />
           </div>
 
-          {/* Paragraph Col 1: col 3 to 11, row 11 to 20 */}
-          <div style={{ gridColumn: "3 / 11", gridRow: "11 / 20" }} className="space-y-4 pr-4">
-            <p className="font-sans-nav f-caps text-[#242424]">
-              Sessions in my practice are structured to feel deeply supportive and clarifying, leaving ample space for reflection.
-            </p>
-            <p className="font-body f-body text-[#242424]">
-              I integrate evidence-based modalities including Cognitive-Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), mindfulness-based practices, and body-oriented techniques. Together, we address both the emotional thought loops and physiological tension you carry.
-            </p>
+          {/* Paragraph Col 1: 11 / 3 / 20 / 11 */}
+          <div style={{ gridColumn: "3 / 11", gridRow: "11 / 20" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <p className="font-sans-nav f-caps text-[#242424]">
+                Sessions in my practice are structured to feel deeply supportive and clarifying, leaving ample space for reflection.
+              </p>
+              <p className="font-body f-body text-[#242424]">
+                I integrate evidence-based modalities including Cognitive-Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), mindfulness-based practices, and body-oriented techniques. Together, we address both the emotional thought loops and physiological tension you carry.
+              </p>
+            </div>
           </div>
 
-          {/* Paragraph Col 2: col 11 to 19, row 11 to 20 */}
-          <div style={{ gridColumn: "11 / 19", gridRow: "11 / 20" }} className="space-y-3 px-2">
+          {/* Paragraph Col 2: 11 / 11 / 20 / 19 */}
+          <div style={{ gridColumn: "11 / 19", gridRow: "11 / 20" }} className="fe-block fe-top">
             <p className="font-body f-body text-[#242424]">
               Trauma and anxiety work is paced carefully, prioritizing safety, nervous system stabilization, and practical integration so you feel more centered and regulated in your everyday life—not just during our 50 minutes together. We work together as collaborative partners to help you understand your internal world, build durable coping tools, and cultivate a stronger, kinder relationship with yourself.
             </p>
           </div>
 
-          {/* Button: col 3 to 19, row 21 to 23 */}
-          <div style={{ gridColumn: "3 / 19", gridRow: "21 / 23" }} className="pt-2">
+          {/* Button: 21 / 3 / 23 / 19 */}
+          <div style={{ gridColumn: "3 / 19", gridRow: "21 / 23" }} className="fe-block fe-top items-start">
             <a href="#about" className="maya-btn-underline">
               LEARN MORE ABOUT DR. MAYA REYNOLDS
             </a>
@@ -744,8 +768,10 @@ export default function Part2CreativeRedesignPage() {
 
       {/* =========================================================================
           SECTION 7: SECONDARY AFFIRMATION BANNER (Pure White #FFFFFF)
+          Image: cols 1 to 15 (flush left edge), rows 1 to 15
+          Text: cols 16 to 26, rows 9 to 15
       ========================================================================== */}
-      <section className="bg-white py-16 lg:py-24 overflow-hidden border-t border-[#E5DDD1]/40">
+      <section className="bg-white py-16 md:py-[6.6vmax] overflow-hidden border-t border-[#E5DDD1]/40">
         {/* Mobile View */}
         <div className="md:hidden space-y-6">
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
@@ -770,26 +796,25 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "460px" }}>
-          {/* Left Image: col 1 to 15 (flush left), row 1 to 15 */}
-          <div style={{ gridColumn: "1 / 15", gridRow: "1 / 15" }} className="relative w-full h-full min-h-[420px]">
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 14 }}>
+          {/* Left Image: 1 / 1 / 15 / 15 */}
+          <div style={{ gridColumn: "1 / 15", gridRow: "1 / 15" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__285_29.jpg"
               alt="Serene ocean shoreline at sunset"
               fill
-              sizes="(max-width: 1024px) 55vw, 50vw"
+              sizes="54vw"
               className="object-cover object-center"
             />
           </div>
 
-          {/* Quote Text: col 16 to 26, row 9 to 15 */}
-          <div style={{ gridColumn: "16 / 26", gridRow: "9 / 15" }} className="flex items-center pl-4">
+          {/* Quote Text: 9 / 16 / 15 / 26 */}
+          <div style={{ gridColumn: "16 / 26", gridRow: "9 / 15" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#242424]">
               Honoring where you’ve been{" "}
               <span className="font-script f-script text-[#A45D43]">
                 &amp;
-              </span>
-              <br />
+              </span>{" "}
               helping shape a sustainable, fulfilling path forward.
             </h2>
           </div>
@@ -798,18 +823,23 @@ export default function Part2CreativeRedesignPage() {
 
       {/* =========================================================================
           SECTION 8: OUR SPECIALTIES INCLUDE… (Pure White #FFFFFF)
+          Title: cols 3 to 10, rows 3 to 7
+          Col 1 (Anxiety): cols 11 to 18, rows 4 to 14
+          Col 1 (Burnout): cols 11 to 18, rows 15 to 25
+          Col 2 (EMDR): cols 19 to 26, rows 4 to 14
+          Col 2 (Nervous System): cols 19 to 26, rows 15 to 25
       ========================================================================== */}
-      <section id="specialties" className="bg-white border-t border-[#E5DDD1]/40 overflow-hidden py-16 lg:py-24">
+      <section id="specialties" className="bg-white border-t border-[#E5DDD1]/40 overflow-hidden">
         {/* Mobile View */}
-        <div className="md:hidden px-6 space-y-10">
-          <h2 className="font-serif-heading f-h2 text-[#242424]">
+        <div className="md:hidden px-6 py-16 space-y-10">
+          <h3 className="font-serif-heading f-h3 text-[#242424]">
             Our{" "}
             <span className="font-script f-script text-[#A45D43]">
               specialties
             </span>
             <br />
             include…
-          </h2>
+          </h3>
           <div className="space-y-8">
             <div className="space-y-3">
               <h3 className="font-serif-heading f-h4 text-[#242424]">
@@ -850,90 +880,95 @@ export default function Part2CreativeRedesignPage() {
                 </a>
               </div>
             </div>
+            <div className="space-y-3">
+              <h3 className="font-serif-heading f-h4 text-[#242424]">
+                Nervous System Regulation
+              </h3>
+              <p className="font-body f-body text-[#242424]">
+                Connecting the mind and the body through polyvagal-informed somatic techniques. We help you recognize subtle autonomic triggers before panic escalates, teaching your nervous system how to return safely to calm presence and grounded ease.
+              </p>
+              <div>
+                <a href="#consultation" className="maya-btn-underline">
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "680px" }}>
-          {/* Title: col 3 to 10, row 3 to 7 */}
-          <div style={{ gridColumn: "3 / 10", gridRow: "3 / 7" }}>
-            <h2 className="font-serif-heading f-h2 text-[#242424]">
-              Our{" "}
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 25 }}>
+          {/* Title: 3 / 3 / 7 / 10 */}
+          <div style={{ gridColumn: "3 / 10", gridRow: "3 / 7" }} className="fe-block">
+            <h3 className="font-serif-heading f-h3 text-[#242424]">
+              Our{"  "}
               <span className="font-script f-script text-[#A45D43]">
                 specialties
-              </span>
-              <br />
+              </span>{" "}
               include…
-            </h2>
+            </h3>
           </div>
 
-          {/* Col 1, Item 1 (Anxiety): col 11 to 18, row 4 to 14 */}
-          <div style={{ gridColumn: "11 / 18", gridRow: "4 / 14" }} className="space-y-3 pr-4">
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Anxiety &amp; Panic Therapy
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Untangling persistent worry, catastrophic thinking loops, and somatic panic sensations. Through CBT and somatic grounding, we identify the cognitive patterns and physiological triggers driving your anxiety, helping you regain control and feel truly safe in your body.
-            </p>
-            <div className="pt-2">
+          {[
+            {
+              title: "Anxiety & Panic Therapy",
+              col: "11 / 18",
+              row: "4 / 11",
+              btnRow: "11 / 13",
+              body: "Untangling persistent worry, catastrophic thinking loops, and somatic panic sensations. Through CBT and somatic grounding, we identify the cognitive patterns and physiological triggers driving your anxiety, helping you regain control and feel truly safe in your body.",
+            },
+            {
+              title: "Burnout & Perfectionism",
+              col: "11 / 18",
+              row: "15 / 22",
+              btnRow: "22 / 24",
+              body: "Helping high-achieving professionals, entrepreneurs, and creatives step out of chronic exhaustion and internal pressure. We examine the roots of relentless expectations, establish healthy boundaries, and cultivate sustainable rhythms that protect your well-being.",
+            },
+            {
+              title: "Trauma Recovery & EMDR",
+              col: "19 / 26",
+              row: "4 / 11",
+              btnRow: "11 / 13",
+              body: "Evidence-based trauma therapy that reprocesses painful memories so they no longer control your present. EMDR works by reactivating your brain's natural information processing system, reducing emotional distress and restoring deep self-compassion.",
+            },
+            {
+              title: "Nervous System Regulation",
+              col: "19 / 26",
+              row: "15 / 22",
+              btnRow: "22 / 24",
+              body: "Connecting the mind and the body through polyvagal-informed somatic techniques. We help you recognize subtle autonomic triggers before panic escalates, teaching your nervous system how to return safely to calm presence and grounded ease.",
+            },
+          ].flatMap(({ title, col, row, btnRow, body }) => [
+            <div
+              key={title}
+              style={{ gridColumn: col, gridRow: row }}
+              className="fe-block fe-top"
+            >
+              <div className="fe-rte">
+                <h4 className="font-serif-heading f-h4 text-[#242424]">{title}</h4>
+                <p className="font-body f-body text-[#242424]">{body}</p>
+              </div>
+            </div>,
+            <div
+              key={`${title}-cta`}
+              style={{ gridColumn: col, gridRow: btnRow }}
+              className="fe-block fe-top items-start"
+            >
               <a href="#consultation" className="maya-btn-underline">
                 LEARN MORE
               </a>
-            </div>
-          </div>
-
-          {/* Col 2, Item 1 (EMDR): col 19 to 26, row 4 to 14 */}
-          <div style={{ gridColumn: "19 / 26", gridRow: "4 / 14" }} className="space-y-3 pr-2">
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Trauma Recovery &amp; EMDR
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Evidence-based trauma therapy that reprocesses painful memories so they no longer control your present. EMDR works by reactivating your brain&apos;s natural information processing system, reducing emotional distress and restoring deep self-compassion.
-            </p>
-            <div className="pt-2">
-              <a href="#consultation" className="maya-btn-underline">
-                LEARN MORE
-              </a>
-            </div>
-          </div>
-
-          {/* Col 1, Item 2 (Burnout): col 11 to 18, row 15 to 25 */}
-          <div style={{ gridColumn: "11 / 18", gridRow: "15 / 25" }} className="space-y-3 pr-4 pt-4">
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Burnout &amp; Perfectionism
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Helping high-achieving professionals, entrepreneurs, and creatives step out of chronic exhaustion and internal pressure. We examine the roots of relentless expectations, establish healthy boundaries, and cultivate sustainable rhythms that protect your well-being.
-            </p>
-            <div className="pt-2">
-              <a href="#consultation" className="maya-btn-underline">
-                LEARN MORE
-              </a>
-            </div>
-          </div>
-
-          {/* Col 2, Item 2 (Somatic Regulation): col 19 to 26, row 15 to 25 */}
-          <div style={{ gridColumn: "19 / 26", gridRow: "15 / 25" }} className="space-y-3 pr-2 pt-4">
-            <h3 className="font-serif-heading f-h4 text-[#242424]">
-              Nervous System Regulation
-            </h3>
-            <p className="font-body f-body text-[#242424]">
-              Connecting the mind and the body through polyvagal-informed somatic techniques. We help you recognize subtle autonomic triggers before panic escalates, teaching your nervous system how to return safely to calm presence and grounded ease.
-            </p>
-            <div className="pt-2">
-              <a href="#consultation" className="maya-btn-underline">
-                LEARN MORE
-              </a>
-            </div>
-          </div>
+            </div>,
+          ])}
         </div>
       </section>
 
-
       {/* =========================================================================
           SECTION 10: SCHEDULE AN APPOINTMENT (Flanked by edge-anchored photos)
+          Left Photo: cols 1 to 4 (flush left), rows 4 to 16
+          Center: cols 6 to 16, rows 1 to 16
+          Right Photo: cols 18 to 27 (flush right), rows 1 to 16
       ========================================================================== */}
-      <section id="appointment" className="w-full bg-[#F8F6F2] py-16 lg:py-24 overflow-hidden border-t border-[#E5DDD1]/50">
+      <section id="appointment" className="w-full bg-[#F8F6F2] py-16 md:py-[6.6vmax] overflow-hidden border-t border-[#E5DDD1]/50">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-6 text-left">
           <p className="font-sans-nav f-eyebrow text-[#738A84]">
@@ -973,27 +1008,27 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "560px" }}>
-          {/* Left Photo: col 1 to 4 (flush to left edge), row 4 to 16 */}
-          <div style={{ gridColumn: "1 / 4", gridRow: "4 / 16" }} className="relative w-full h-full min-h-[380px]">
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 16 }}>
+          {/* Left Photo: 4 / 1 / 16 / 4 */}
+          <div style={{ gridColumn: "1 / 4", gridRow: "4 / 16" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__2812_29.jpg"
               alt="Person reflecting peacefully on the beach"
               fill
-              sizes="(max-width: 1024px) 16vw, 13vw"
+              sizes="12vw"
               className="object-cover object-center"
             />
           </div>
 
-          {/* Eyebrow: col 6 to 16, row 1 to 3 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "1 / 3" }} className="flex items-end justify-start pb-2 text-left">
+          {/* Eyebrow: 1 / 6 / 3 / 16 */}
+          <div style={{ gridColumn: "6 / 16", gridRow: "1 / 3" }} className="fe-block fe-top">
             <p className="font-sans-nav f-eyebrow text-[#738A84]">
               SCHEDULE A CONSULTATION
             </p>
           </div>
 
-          {/* H2 Heading: col 6 to 16, row 4 to 8 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "4 / 8" }} className="flex items-center justify-start text-left">
+          {/* H2 Heading: 4 / 6 / 8 / 16 */}
+          <div style={{ gridColumn: "6 / 16", gridRow: "4 / 8" }} className="fe-block fe-top">
             <h2 className="font-serif-heading f-h2 text-[#242424]">
               Find a therapist who is the
               <br /> right fit for{" "}
@@ -1004,31 +1039,34 @@ export default function Part2CreativeRedesignPage() {
             </h2>
           </div>
 
-          {/* Body text: col 6 to 16, row 8 to 14 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "8 / 14" }} className="flex flex-col justify-start text-left space-y-4 pt-1">
-            <p className="font-body f-body text-[#242424] max-w-lg">
-              Reaching out for therapy is a courageous decision, and working with someone who truly understands your lived reality makes all the difference.
-            </p>
-            <p className="font-body f-body text-[#242424]">
-              I invite you to schedule an initial 15-minute consultation to discuss what you&apos;re seeking and explore if my approach aligns with your needs.
-            </p>
+          {/* Body text: 8 / 6 / 14 / 16 */}
+          <div style={{ gridColumn: "6 / 16", gridRow: "8 / 14" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <p className="font-body f-body text-[#242424]">
+                Reaching out for therapy is a courageous decision, and working with someone who truly understands your lived reality makes all the difference.
+              </p>
+              <p className="font-body f-body text-[#242424]">
+                I invite you to schedule an initial 15-minute consultation to discuss what you&apos;re seeking and explore if my approach aligns with your needs.
+              </p>
+            </div>
           </div>
 
-          {/* CTA Button: col 6 to 16, row 14 to 16 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "14 / 16" }} className="flex items-start justify-start pt-2">
+          {/* CTA Button: 14 / 6 / 16 / 16 */}
+          <div style={{ gridColumn: "6 / 16", gridRow: "14 / 16" }} className="fe-block items-start">
             <a href="#consultation" className="maya-btn-pill">
               BOOK A CONSULTATION
             </a>
           </div>
 
-          {/* Right Photo: col 18 to 27 (flush to right edge), row 1 to 16 */}
-          <div style={{ gridColumn: "18 / 27", gridRow: "1 / 16" }} className="relative w-full h-full min-h-[480px]">
+          {/* Right Photo: 1 / 18 / 16 / 27 */}
+          <div style={{ gridColumn: "18 / 27", gridRow: "1 / 16" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__2811_29.jpg"
               alt="Sunset reflections along the Santa Monica shore"
               fill
-              sizes="(max-width: 1024px) 35vw, 32vw"
-              className="object-cover object-center"
+              sizes="35vw"
+              className="object-cover"
+              style={{ objectPosition: "62.8568% 52.8033%" }}
             />
           </div>
         </div>
@@ -1037,7 +1075,7 @@ export default function Part2CreativeRedesignPage() {
       {/* =========================================================================
           SECTION 11: FAQS ACCORDION (Pure White #FFFFFF)
       ========================================================================== */}
-      <section id="faqs" className="bg-white py-16 lg:py-24 border-t border-[#E5DDD1]/40 overflow-hidden">
+      <section id="faqs" className="bg-white py-16 md:py-[5.5vmax] border-t border-[#E5DDD1]/40 overflow-hidden">
         <div className="max-w-4xl mx-auto px-6 md:px-12 space-y-10">
           <div className="text-center space-y-3">
             <p className="font-sans-nav f-eyebrow text-[#738A84]">
@@ -1078,7 +1116,7 @@ export default function Part2CreativeRedesignPage() {
       {/* =========================================================================
           SECTION 12: INTERACTIVE CONSULTATION FORM (Warm Dune Sand #EFEBE3)
       ========================================================================== */}
-      <section id="consultation" className="bg-[#EFEBE3] py-16 lg:py-24 border-t border-[#E5DDD1]/50 overflow-hidden">
+      <section id="consultation" className="bg-[#EFEBE3] py-16 md:py-[5.5vmax] border-t border-[#E5DDD1]/50 overflow-hidden">
         <div className="max-w-3xl mx-auto px-6 md:px-12 space-y-8">
           <div className="text-center space-y-3">
             <p className="font-sans-nav f-eyebrow text-[#738A84]">
@@ -1212,7 +1250,7 @@ export default function Part2CreativeRedesignPage() {
           SECTION 13: FOOTER (Pure White #FFFFFF)
           4 Columns: Brand/Intro, Navigate, Specialties, Contact
       ========================================================================== */}
-      <footer id="about" className="bg-white py-16 sm:py-24 border-t border-[#E5DDD1]/50 overflow-hidden">
+      <footer id="about" className="bg-white py-16 md:py-[4.5vmax] border-t border-[#E5DDD1]/50 overflow-hidden">
         {/* Mobile View */}
         <div className="md:hidden px-6 space-y-10">
           <div className="space-y-4">
@@ -1247,7 +1285,7 @@ export default function Part2CreativeRedesignPage() {
               <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors">Anxiety &amp; Panic Therapy</a></li>
               <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors">Trauma Recovery &amp; EMDR</a></li>
               <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors">Burnout &amp; Perfectionism</a></li>
-              <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors">Somatic &amp; Nervous System Care</a></li>
+              <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors">Nervous System Regulation</a></li>
             </ul>
           </div>
           <div className="space-y-3">
@@ -1278,9 +1316,9 @@ export default function Part2CreativeRedesignPage() {
         </div>
 
         {/* Desktop 24-Column Fluid Grid */}
-        <div className="hidden md:grid sqs-fluid-grid-11" style={{ minHeight: "340px" }}>
-          {/* Logo & Warm Intro: col 2 to 10, row 1 to 10 */}
-          <div style={{ gridColumn: "2 / 10", gridRow: "1 / 10" }} className="space-y-4 pr-6">
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 9 }}>
+          {/* Brand/Identity: 1 / 2 / 5 / 9 */}
+          <div style={{ gridColumn: "2 / 9", gridRow: "1 / 4" }} className="fe-block fe-top">
             <div className="space-y-1">
               <span className="font-serif-heading text-[22px] font-light tracking-[-0.3px] text-[#242424] block">
                 Dr. Maya Reynolds, PsyD
@@ -1289,67 +1327,73 @@ export default function Part2CreativeRedesignPage() {
                 Licensed Clinical Psychologist • Santa Monica, CA
               </span>
             </div>
-            <p className="font-body f-body text-[#242424] max-w-[430px]">
+          </div>
+
+          {/* Warm Intro: 4 / 2 / 9 / 10 */}
+          <div style={{ gridColumn: "2 / 10", gridRow: "4 / 9" }} className="fe-block fe-top fe-pad-6">
+            <p className="font-body f-body text-[#242424]">
               Specialized, grounded psychological therapy for thoughtful adults navigating anxiety, trauma, and burnout. Welcoming clients in-person at our Santa Monica sanctuary and throughout California via secure telehealth.
             </p>
           </div>
 
-          {/* Navigate: col 12 to 16, row 1 to 10 */}
-          <div style={{ gridColumn: "12 / 16", gridRow: "1 / 10" }}>
-            <h4 className="font-sans-nav f-eyebrow text-[#242424] mb-5">
-              NAVIGATE
-            </h4>
-            <ul className="space-y-[10px] font-body f-foot text-[#242424]">
-              <li><a href="/part-2" className="hover:text-[#A45D43] transition-colors cursor-pointer">Home</a></li>
-              <li><a href="#about" className="hover:text-[#A45D43] transition-colors cursor-pointer">About Dr. Maya</a></li>
-              <li><a href="#who-we-help" className="hover:text-[#A45D43] transition-colors cursor-pointer">Who We Help</a></li>
-              <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors cursor-pointer">Specialties</a></li>
-              <li><a href="#faqs" className="hover:text-[#A45D43] transition-colors cursor-pointer">FAQs</a></li>
-              <li><a href="#consultation" className="hover:text-[#A45D43] transition-colors cursor-pointer">Contact</a></li>
-            </ul>
+          {/* Navigate: 1 / 12 / 6 / 16 */}
+          <div style={{ gridColumn: "12 / 16", gridRow: "1 / 6" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <p className="font-sans-nav f-eyebrow text-[#242424]">Navigate</p>
+              <p className="font-body f-foot text-[#242424]">
+                <a href="/part-2" className="hover:text-[#A45D43] transition-colors">Home</a>
+                <br />
+                <a href="#about" className="hover:text-[#A45D43] transition-colors">About Dr. Maya</a>
+                <br />
+                <a href="#who-we-help" className="hover:text-[#A45D43] transition-colors">Who We Help</a>
+                <br />
+                <a href="#specialties" className="hover:text-[#A45D43] transition-colors">Specialties</a>
+                <br />
+                <a href="#faqs" className="hover:text-[#A45D43] transition-colors">FAQs</a>
+                <br />
+                <a href="#consultation" className="hover:text-[#A45D43] transition-colors">Contact</a>
+              </p>
+            </div>
           </div>
 
-          {/* Specialties: col 16 to 21, row 1 to 10 */}
-          <div style={{ gridColumn: "16 / 21", gridRow: "1 / 10" }}>
-            <h4 className="font-sans-nav f-eyebrow text-[#242424] mb-5">
-              SPECIALTIES
-            </h4>
-            <ul className="space-y-[8px] font-body f-foot text-[#242424]">
-              <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors cursor-pointer">Anxiety &amp; Panic Therapy</a></li>
-              <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors cursor-pointer">Trauma Recovery &amp; EMDR</a></li>
-              <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors cursor-pointer">Burnout &amp; Perfectionism</a></li>
-              <li><a href="#specialties" className="hover:text-[#A45D43] transition-colors cursor-pointer">Nervous System Somatics</a></li>
-            </ul>
+          {/* Specialties: 1 / 16 / 10 / 21 */}
+          <div style={{ gridColumn: "16 / 21", gridRow: "1 / 10" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <p className="font-sans-nav f-eyebrow text-[#242424]">Specialties</p>
+              <p className="font-body f-foot text-[#242424]">
+                <a href="#specialties" className="hover:text-[#A45D43] transition-colors">Anxiety &amp; Panic Therapy</a>
+                <br />
+                <a href="#specialties" className="hover:text-[#A45D43] transition-colors">Trauma Recovery &amp; EMDR</a>
+                <br />
+                <a href="#specialties" className="hover:text-[#A45D43] transition-colors">Burnout &amp; Perfectionism</a>
+                <br />
+                <a href="#specialties" className="hover:text-[#A45D43] transition-colors">Nervous System Regulation</a>
+              </p>
+            </div>
           </div>
 
-          {/* Contact: col 21 to 26, row 1 to 10 */}
-          <div style={{ gridColumn: "21 / 26", gridRow: "1 / 10" }} className="font-body f-foot text-[#242424]">
-            <h4 className="font-sans-nav f-eyebrow text-[#242424] mb-5">
-              OFFICE &amp; CONTACT
-            </h4>
-            <div className="space-y-4">
-              <p>
+          {/* Contact: 1 / 21 / 10 / 26 */}
+          <div style={{ gridColumn: "21 / 26", gridRow: "1 / 10" }} className="fe-block fe-top">
+            <div className="fe-rte">
+              <p className="font-sans-nav f-eyebrow text-[#242424]">Contact</p>
+              <p className="font-body f-foot text-[#242424]">
                 123th Street 45 W
                 <br />
                 Santa Monica, CA 90401
+                <br />
+                <a
+                  href="mailto:dr.maya@reynoldspsychology.com"
+                  className="hover:text-[#A45D43] transition-colors"
+                >
+                  dr.maya@reynoldspsychology.com
+                </a>
+                <br />
+                <a href="tel:3105550194" className="hover:text-[#A45D43] transition-colors">
+                  (310) 555-0194
+                </a>
               </p>
-              <div>
-                <p>
-                  <a
-                    href="mailto:dr.maya@reynoldspsychology.com"
-                    className="hover:text-[#A45D43] transition-colors"
-                  >
-                    dr.maya@reynoldspsychology.com
-                  </a>
-                </p>
-                <p>
-                  <a href="tel:3105550194" className="hover:text-[#A45D43] transition-colors">
-                    (310) 555-0194
-                  </a>
-                </p>
-              </div>
-              <p className="font-body f-foot text-[#242424] pt-2">
-                Serving Santa Monica, Venice, Brentwood, Pacific Palisades, &amp; across California via Telehealth
+              <p className="font-body f-foot italic text-[#242424]">
+                Serving Santa Monica, Venice, Brentwood, Pacific Palisades, &amp; across CA via Telehealth
               </p>
             </div>
           </div>
@@ -1359,10 +1403,15 @@ export default function Part2CreativeRedesignPage() {
       {/* =========================================================================
           SECTION 14: SUB-FOOTER LEGAL BAR (Santa Monica Terracotta Accent #A45D43)
       ========================================================================== */}
-      <div className="bg-[#A45D43] text-white px-6 font-body f-body min-h-[56px] flex items-center justify-center text-center">
-        <p className="f-foot">
+      <div className="bg-[#A45D43] text-white py-3 md:py-[0.5vmax]">
+        <div className="md:hidden px-6 font-body f-foot">
           © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All Rights Reserved. | Terms &amp; Conditions | Privacy Policy | Notice of Privacy Practices | Santa Monica, CA
-        </p>
+        </div>
+        <div className="hidden md:grid sqs-fluid-grid-11" style={{ ["--row-count" as string]: 1 }}>
+          <div style={{ gridColumn: "2 / 26", gridRow: "1 / 2" }} className="fe-block fe-pad-2">
+            <p className="font-body f-foot">© {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All Rights Reserved. | Terms &amp; Conditions | Privacy Policy | Notice of Privacy Practices | Santa Monica, CA</p>
+          </div>
+        </div>
       </div>
     </div>
   );
