@@ -40,5 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# scratch
+# scratch & test captures
 scratch/
+.playwright-mcp/
+clone-full*.png
+video-frames/
