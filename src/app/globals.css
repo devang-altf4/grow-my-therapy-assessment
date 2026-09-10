@@ -153,7 +153,7 @@
   font-size: calc(15px - 0.18vw);
   line-height: 1.2em;
   padding: 15px 19.5px;
-  border-radius: 100%;
+  border-radius: 300px;
   border: 1px solid #2B2B2B;
   color: #2B2B2B;
   background: transparent;
@@ -175,11 +175,10 @@
   font-family: 'Muli', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1.32px;
-  font-size: 13.17px;
-  min-width: 147px;
-  height: 47px;
-  padding: 0 24px;
+  letter-spacing: .12em;
+  font-size: calc(15px - 0.18vw);
+  line-height: 1.2em;
+  padding: 15px 19.5px;
   color: #242424;
   background-color: transparent;
   border: 1px solid #242424;
@@ -187,6 +186,7 @@
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .maya-btn-pill:hover {
@@ -204,7 +204,7 @@
   letter-spacing: .12em;
   font-size: calc(15px - 0.18vw);
   line-height: 1.2em;
-  padding-bottom: 4px;
+  padding: 9px 0;
   color: #242424;
   transform: perspective(1px) translateZ(0);
 }
