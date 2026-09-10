@@ -258,11 +258,11 @@ export default function Part2CreativeRedesignPage() {
         <div className="md:hidden px-6 pt-6 pb-12 space-y-6">
           <div className="relative aspect-[526/596] w-full overflow-hidden bg-[#EFEBE3]">
             <Image
-              src="/assets/maya/hero-1.jpg"
-              alt="Peaceful Santa Monica morning coast"
+              src="/assets/Dr. Maya Reynolds.png"
+              alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist in Santa Monica"
               fill
               sizes="100vw"
-              className="object-cover object-center"
+              className="object-cover object-top"
               priority
             />
           </div>
@@ -290,11 +290,11 @@ export default function Part2CreativeRedesignPage() {
           {/* Left Image: col 1 to 10 (flush to left edge), row 2 to 17 */}
           <div style={{ gridColumn: "1 / 10", gridRow: "2 / 17" }} className="relative w-full h-full min-h-[520px]">
             <Image
-              src="/assets/maya/hero-1.jpg"
-              alt="Peaceful Santa Monica morning coast"
+              src="/assets/Dr. Maya Reynolds.png"
+              alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
               fill
               sizes="(max-width: 1024px) 45vw, 36vw"
-              className="object-cover object-center"
+              className="object-cover object-top"
               priority
             />
           </div>
@@ -308,7 +308,7 @@ export default function Part2CreativeRedesignPage() {
 
           {/* H1 Heading & Paragraph: col 12 to 24, row 6 to 15 */}
           <div style={{ gridColumn: "12 / 24", gridRow: "6 / 15" }} className="flex flex-col justify-center space-y-4">
-            <h1 className="font-serif-heading text-[38px] lg:text-[48px] xl:text-[60px] font-light text-[#242424] leading-[1.18] tracking-[-0.625px]">
+            <h1 className="font-serif-heading text-[38px] lg:text-[50px] xl:text-[62.5px] font-light text-[#242424] leading-[1.18] tracking-[-0.625px]">
               <span className="inline-block whitespace-nowrap">Reclaim your calm, rebuild</span>
               <br />
               <span className="inline-block whitespace-nowrap">your foundation, and finally</span>
@@ -335,15 +335,15 @@ export default function Part2CreativeRedesignPage() {
             </a>
           </div>
 
-          {/* Right Image: Dr. Maya Reynolds Portrait: col 25 to 27 (flush right), row 6 to 17 */}
-          <div style={{ gridColumn: "25 / 27", gridRow: "6 / 17" }} className="relative w-full h-full min-h-[380px] overflow-hidden bg-[#EFEBE3]">
+          {/* Right Image: Coastal Accent: col 25 to 27 (flush right), row 7 to 17 */}
+          <div style={{ gridColumn: "25 / 27", gridRow: "7 / 17" }} className="relative w-full h-full min-h-[380px] overflow-hidden">
             <Image
-              src="/assets/Dr. Maya Reynolds.png"
-              alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
+              src="/assets/conejo/Jennifer_A_-_Images__2867_29.jpg"
+              alt="Peaceful California coastline"
               fill
-              sizes="140px"
-              className="object-cover object-top"
-              priority
+              sizes="130px"
+              className="object-cover"
+              style={{ objectPosition: "87.2951% 56.0035%" }}
             />
           </div>
         </div>
@@ -683,11 +683,11 @@ export default function Part2CreativeRedesignPage() {
           </h2>
           <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E5DDD1]">
             <Image
-              src="/assets/Dr. Maya Reynolds.png"
-              alt="Dr. Maya Reynolds, PsyD"
+              src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
+              alt="A joyous moment of connection and lightness on the beach"
               fill
               sizes="100vw"
-              className="object-cover object-top"
+              className="object-cover object-center"
             />
           </div>
           <div className="space-y-4 text-[16px] font-body font-light text-[#242424] leading-relaxed">
@@ -727,11 +727,11 @@ export default function Part2CreativeRedesignPage() {
           {/* Right Image: col 21 to 27 (flush right), row 4 to 22 */}
           <div style={{ gridColumn: "21 / 27", gridRow: "4 / 22" }} className="relative w-full h-full min-h-[520px] overflow-hidden bg-[#E5DDD1]">
             <Image
-              src="/assets/Dr. Maya Reynolds.png"
-              alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
+              src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
+              alt="A joyous moment of connection and lightness on the beach"
               fill
               sizes="(max-width: 1024px) 35vw, 28vw"
-              className="object-cover object-top"
+              className="object-cover object-center"
             />
           </div>
 
@@ -769,8 +769,8 @@ export default function Part2CreativeRedesignPage() {
         <div className="md:hidden space-y-6">
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
             <Image
-              src="/assets/maya/quote-2.jpg"
-              alt="Serene coastal shoreline"
+              src="/assets/conejo/Jennifer_A_-_Images__285_29.jpg"
+              alt="Serene ocean shoreline at sunset"
               fill
               sizes="100vw"
               className="object-cover object-center"
@@ -793,8 +793,8 @@ export default function Part2CreativeRedesignPage() {
           {/* Left Image: col 1 to 15 (flush left), row 1 to 15 */}
           <div style={{ gridColumn: "1 / 15", gridRow: "1 / 15" }} className="relative w-full h-full min-h-[420px]">
             <Image
-              src="/assets/maya/quote-2.jpg"
-              alt="Serene coastal shoreline"
+              src="/assets/conejo/Jennifer_A_-_Images__285_29.jpg"
+              alt="Serene ocean shoreline at sunset"
               fill
               sizes="(max-width: 1024px) 55vw, 50vw"
               className="object-cover object-center"
