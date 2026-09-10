@@ -1,26 +1,204 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'beaufort-pro';
+  src: url('/fonts/beaufort-pro-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'beaufort-pro';
+  src: url('/fonts/beaufort-pro-300-italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('/fonts/muli-300-normal.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('/fonts/muli-300-italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('/fonts/muli-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PrintedMoments';
+  src: url('/fonts/printedmoments-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Conejo Valley Exact Squarespace Brand Tokens */
+  --conejo-text: #2B2B2B;
+  --conejo-dark-accent: #86B3B3;
+  --conejo-bg-cream: #F6F4EE;
+  --conejo-bg-sand: #E3D9CA;
+  --conejo-border: #E3D9CA;
+  --conejo-btn-border: #515151;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Authentic Typography */
+.font-serif-heading {
+  font-family: 'beaufort-pro', Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-sans-nav {
+  font-family: 'Muli', sans-serif;
+}
+
+.font-body {
+  font-family: 'Muli', sans-serif;
+}
+
+.font-script {
+  font-family: 'PrintedMoments', cursive, serif;
+}
+
+/* Backward compatibility utility classes */
+.font-cormorant {
+  font-family: 'beaufort-pro', Georgia, serif;
+}
+
+.font-mulish {
+  font-family: 'Muli', sans-serif;
+}
+
+/* Conejo Squarespace Underlined Button (Primary) */
+.conejo-btn-underline {
+  position: relative;
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+  font-size: 12.26px;
+  padding-bottom: 4px;
+  color: #2B2B2B;
+  border-bottom: 1px solid #515151;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.conejo-btn-underline:hover {
+  opacity: 0.7;
+}
+
+/* Conejo Outlined Pill Button (Secondary / CTA) */
+.conejo-btn-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+  font-size: 12.26px;
+  min-width: 147px;
+  height: 47px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  border: 0.8px solid #2B2B2B;
+  color: #2B2B2B;
+  background: transparent;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.conejo-btn-pill:hover {
+  background-color: #2B2B2B;
+  color: #ffffff;
+}
+
+/* Navigation link hover line */
+.nav-link-item {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link-item::after {
+  content: '';
+  display: block;
+  background: #2B2B2B;
+  height: 1px;
+  width: 0;
+  margin-top: 2px;
+  transition: width 0.3s ease;
+  margin-right: auto;
+}
+
+.nav-link-item:hover::after {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #2B2B2B;
+  font-family: 'Muli', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Authentic Squarespace Fluid Engine 24-Column Grid System */
+.sqs-fluid-grid-11 {
+  --sqs-site-max-width: 1500px;
+  --sqs-site-gutter: 4vw;
+  --container-width: min(var(--sqs-site-max-width), calc(100vw - var(--sqs-site-gutter) * 2));
+  --row-height: calc(var(--container-width) * 0.0215);
+  --cell-max-width: calc((var(--sqs-site-max-width) - 253px) / 24);
+  --grid-gutter: calc(var(--sqs-site-gutter) - 11px);
+}
+
+.sqs-fluid-grid-20 {
+  --sqs-site-max-width: 1500px;
+  --sqs-site-gutter: 4vw;
+  --container-width: min(var(--sqs-site-max-width), calc(100vw - var(--sqs-site-gutter) * 2));
+  --row-height: calc(var(--container-width) * 0.0215);
+  --cell-max-width: calc((var(--sqs-site-max-width) - 460px) / 24);
+  --grid-gutter: calc(var(--sqs-site-gutter) - 20px);
+}
+
+@media (min-width: 768px) {
+  .sqs-fluid-grid-11 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
+    grid-auto-rows: minmax(var(--row-height), auto);
+    row-gap: 11px;
+    column-gap: 11px;
+  }
+
+  .sqs-fluid-grid-20 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
+    grid-auto-rows: minmax(var(--row-height), auto);
+    row-gap: 11px;
+    column-gap: 20px;
+  }
 }
