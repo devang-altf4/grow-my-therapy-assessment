@@ -554,7 +554,10 @@ export default function Part1ClonePage() {
           {/* Quote: 5 / 3 / 11 / 19 */}
           <div style={{ gridColumn: "3 / 19", gridRow: "5 / 11" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#F6F4EE]">
-              You deserve a place where your story is heard, valued, and understood. Nothing will be too heavy for us to carry together.
+              You deserve a place where your story is heard, valued, and understood.{" "}
+              <em className="font-light italic text-[#F6F4EE]">
+                Nothing will be too heavy for us to carry together.
+              </em>
             </h2>
           </div>
         </div>

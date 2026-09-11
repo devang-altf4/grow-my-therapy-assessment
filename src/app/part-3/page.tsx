@@ -604,7 +604,10 @@ export default function Part3CustomSectionPage() {
         <div className="hidden lg:grid sqs-fluid-grid-11 relative z-10" style={{ ["--row-count" as string]: 10 }}>
           <div style={{ gridColumn: "3 / 21", gridRow: "5 / 11" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#F8F6F2]">
-              You deserve a quiet, sacred space where your story is heard, honored, and deeply understood. Nothing you bring is too heavy for us to carry together.
+              You deserve a quiet, sacred space where your story is heard, honored, and deeply understood.{" "}
+              <em className="font-light italic text-[#F8F6F2]">
+                Nothing you bring is too heavy for us to carry together.
+              </em>
             </h2>
           </div>
         </div>
