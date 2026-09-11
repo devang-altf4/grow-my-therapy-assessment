@@ -302,7 +302,7 @@ export default function Part3CustomSectionPage() {
           {/* Right Coastal Accent Image: 5 / 25 / 17 / 27 */}
           <div style={{ gridColumn: "25 / 27", gridRow: "5 / 17" }} className="fe-block relative overflow-hidden">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__2867_29.jpg"
+              src="/assets/maya/maya-v2-hero.jpg"
               alt="Peaceful California coastline"
               fill
               sizes="8vw"
@@ -369,7 +369,7 @@ export default function Part3CustomSectionPage() {
           </p>
           <div className="relative aspect-[462/580] w-full overflow-hidden bg-[#EFEBE3]">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__283_29.jpg"
+              src="/assets/maya/maya-v2-empathy.jpg"
               alt="Peaceful ocean waves along the Santa Monica coast"
               fill
               sizes="(max-width: 1024px) 100vw, 31vw"
@@ -407,7 +407,7 @@ export default function Part3CustomSectionPage() {
           {/* Right Ocean Image: 1 / 19 / 17 / 27 */}
           <div style={{ gridColumn: "19 / 27", gridRow: "1 / 17" }} className="fe-block relative overflow-hidden">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__283_29.jpg"
+              src="/assets/maya/maya-v2-empathy.jpg"
               alt="Peaceful ocean waves along the Santa Monica coast"
               fill
               sizes="31vw"
@@ -582,7 +582,7 @@ export default function Part3CustomSectionPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/conejo/Jennifer_A_-_Images__282_29.png"
+            src="/assets/maya/maya-v2-quote-bg.jpg"
             alt="Warm calming Pacific ocean beach backdrop"
             fill
             className="object-cover object-center"
@@ -703,7 +703,7 @@ export default function Part3CustomSectionPage() {
           </h2>
           <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E5DDD1]">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
+              src="/assets/maya/maya-v2-how.jpg"
               alt="A joyous moment of connection and lightness on the beach"
               fill
               sizes="(max-width: 1024px) 100vw, 23vw"
@@ -747,7 +747,7 @@ export default function Part3CustomSectionPage() {
           {/* Right Image: 4 / 21 / 22 / 27 */}
           <div style={{ gridColumn: "21 / 27", gridRow: "4 / 22" }} className="fe-block relative overflow-hidden">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
+              src="/assets/maya/maya-v2-how.jpg"
               alt="A joyous moment of connection and lightness on the beach"
               fill
               sizes="23vw"
@@ -794,7 +794,7 @@ export default function Part3CustomSectionPage() {
         <div className="lg:hidden space-y-6 max-w-3xl mx-auto">
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__285_29.jpg"
+              src="/assets/maya/maya-v2-honor.jpg"
               alt="Serene ocean shoreline at sunset"
               fill
               sizes="(max-width: 1024px) 100vw, 54vw"
@@ -818,7 +818,7 @@ export default function Part3CustomSectionPage() {
           {/* Left Image: 1 / 1 / 15 / 15 */}
           <div style={{ gridColumn: "1 / 15", gridRow: "1 / 15" }} className="fe-block relative overflow-hidden">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__285_29.jpg"
+              src="/assets/maya/maya-v2-honor.jpg"
               alt="Serene ocean shoreline at sunset"
               fill
               sizes="54vw"
@@ -1074,7 +1074,7 @@ export default function Part3CustomSectionPage() {
           </h2>
           <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#EFEBE3]">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__2811_29.jpg"
+              src="/assets/maya/maya-v2-appt-right.jpg"
               alt="Peaceful beach sand and calming shore"
               fill
               sizes="(max-width: 1024px) 100vw, 35vw"
@@ -1101,7 +1101,7 @@ export default function Part3CustomSectionPage() {
           {/* Left Photo: 4 / 1 / 16 / 4 */}
           <div style={{ gridColumn: "1 / 4", gridRow: "4 / 16" }} className="fe-block relative overflow-hidden">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__2812_29.jpg"
+              src="/assets/maya/maya-v2-appt-left.jpg"
               alt="Person reflecting peacefully on the beach"
               fill
               sizes="12vw"
@@ -1150,7 +1150,7 @@ export default function Part3CustomSectionPage() {
           {/* Right Photo: 1 / 18 / 16 / 27 */}
           <div style={{ gridColumn: "18 / 27", gridRow: "1 / 16" }} className="fe-block relative overflow-hidden">
             <Image
-              src="/assets/conejo/Jennifer_A_-_Images__2811_29.jpg"
+              src="/assets/maya/maya-v2-appt-right.jpg"
               alt="Sunset reflections along the Santa Monica shore"
               fill
               sizes="35vw"
