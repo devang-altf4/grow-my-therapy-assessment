@@ -216,6 +216,16 @@ export default function AssignmentPortalPage() {
               </p>
             </div>
           </div>
+          <div className="flex items-center gap-4 shrink-0">
+          <a
+            href="https://www.loom.com/share/3ebdfb5e0c464dadb129db6042069e70"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-semibold text-neutral-700 hover:text-neutral-950 inline-flex items-center gap-1.5 underline"
+          >
+            <span>Watch Demo Video</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
           <a
             href="https://www.conejovalleycounseling.com/home"
             target="_blank"
@@ -225,6 +235,7 @@ export default function AssignmentPortalPage() {
             <span>Original Template Link</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
+          </div>
         </div>
       </main>
     </div>
