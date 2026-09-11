@@ -260,11 +260,13 @@ export default function Part1ClonePage() {
             </p>
           </div>
 
-          {/* H1 Heading &amp; Paragraph: 7 / 12 / 15 / 24 */}
-          <div style={{ gridColumn: "12 / 24", gridRow: "7 / 15" }} className="fe-block">
+          {/* H1 Heading & Paragraph: 7 / 11 / 15 / 24 */}
+          <div style={{ gridColumn: "11 / 24", gridRow: "7 / 15" }} className="fe-block">
             <div className="fe-rte">
               <h1 className="font-serif-heading f-h1 text-[#2B2B2B]">
-                Rebuild your foundation on solid ground and finally begin to{" "}
+                Rebuild your foundation on<br />
+                solid ground and finally<br />
+                begin to{" "}
                 <span className="font-script f-script text-[#86B3B3]">thrive.</span>
               </h1>
               <p className="font-body f-body text-[#2B2B2B]">
@@ -273,8 +275,8 @@ export default function Part1ClonePage() {
             </div>
           </div>
 
-          {/* Button CTA: 15 / 12 / 17 / 24 */}
-          <div style={{ gridColumn: "12 / 24", gridRow: "15 / 17" }} className="fe-block items-start">
+          {/* Button CTA: 15 / 11 / 17 / 24 */}
+          <div style={{ gridColumn: "11 / 24", gridRow: "15 / 17" }} className="fe-block items-start">
             <a href="#appointment" className="conejo-btn-underline">
               BOOK AN APPOINTMENT
             </a>
@@ -329,7 +331,8 @@ export default function Part1ClonePage() {
           {/* H2 Heading: 4 / 3 / 8 / 16 */}
           <div style={{ gridColumn: "3 / 16", gridRow: "4 / 8" }} className="fe-block">
             <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
-              You’re holding onto hope that life can be better than it is right now.
+              You’re holding onto hope that life can be<br />
+              better than it is right now.
             </h2>
           </div>
 
@@ -551,10 +554,12 @@ export default function Part1ClonePage() {
 
         {/* Desktop 24-Column Fluid Grid */}
         <div className="hidden lg:grid sqs-fluid-grid-11 relative z-10" style={{ ["--row-count" as string]: 10 }}>
-          {/* Quote: 5 / 3 / 11 / 19 */}
-          <div style={{ gridColumn: "3 / 19", gridRow: "5 / 11" }} className="fe-block fe-bottom">
+          {/* Quote: 5 / 2 / 11 / 25 */}
+          <div style={{ gridColumn: "2 / 25", gridRow: "5 / 11" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#F6F4EE]">
-              You deserve a place where your story is heard, valued, and understood. Nothing will be too heavy for us to carry together.
+              You deserve a place where your story is heard,<br />
+              valued, and understood. Nothing will be too heavy for<br />
+              us to carry together.
             </h2>
           </div>
         </div>
@@ -709,8 +714,8 @@ export default function Part1ClonePage() {
             </h2>
           </div>
 
-          {/* Right Image: 4 / 21 / 22 / 27 */}
-          <div style={{ gridColumn: "21 / 27", gridRow: "4 / 22" }} className="fe-block relative overflow-hidden">
+          {/* Right Image: 4 / 18 / 22 / 27 */}
+          <div style={{ gridColumn: "18 / 27", gridRow: "4 / 22" }} className="fe-block relative overflow-hidden">
             <Image
               src="/assets/conejo/Jennifer_A_-_Images__286_29.jpg"
               alt="A woman and a child in white dresses dancing on a sandy beach"
@@ -721,8 +726,8 @@ export default function Part1ClonePage() {
             />
           </div>
 
-          {/* Paragraph Col 1: 11 / 3 / 20 / 11 */}
-          <div style={{ gridColumn: "3 / 11", gridRow: "11 / 20" }} className="fe-block fe-top">
+          {/* Paragraph Col 1: 11 / 2 / 20 / 10 */}
+          <div style={{ gridColumn: "2 / 10", gridRow: "11 / 20" }} className="fe-block fe-top">
             <div className="fe-rte">
               <p className="font-sans-nav f-caps text-[#2B2B2B]">
                 The clients we work with are balancing so many things at once, it’s often hard for them to put themselves first.
@@ -733,8 +738,8 @@ export default function Part1ClonePage() {
             </div>
           </div>
 
-          {/* Paragraph Col 2: 11 / 11 / 20 / 19 */}
-          <div style={{ gridColumn: "11 / 19", gridRow: "11 / 20" }} className="fe-block fe-top">
+          {/* Paragraph Col 2: 11 / 10 / 20 / 18 */}
+          <div style={{ gridColumn: "10 / 18", gridRow: "11 / 20" }} className="fe-block fe-top">
             <p className="font-body f-body text-[#2B2B2B]">
               Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you’ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what’s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
             </p>
@@ -795,11 +800,13 @@ export default function Part1ClonePage() {
           {/* Quote Text: 9 / 16 / 15 / 26 */}
           <div style={{ gridColumn: "16 / 26", gridRow: "9 / 15" }} className="fe-block fe-bottom">
             <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
-              Honoring where you’ve been{" "}
+              Honoring where you’ve<br />
+              been{" "}
               <span className="font-script f-script text-[#86B3B3]">
                 &amp;
               </span>{" "}
-              helping shape where you’re headed.
+              helping shape<br />
+              where you’re headed.
             </h2>
           </div>
         </div>
@@ -989,23 +996,24 @@ export default function Part1ClonePage() {
             />
           </div>
 
-          {/* Eyebrow: 1 / 6 / 3 / 16 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "1 / 3" }} className="fe-block fe-top">
+          {/* Eyebrow: 1 / 5 / 3 / 18 */}
+          <div style={{ gridColumn: "5 / 18", gridRow: "1 / 3" }} className="fe-block fe-top">
             <p className="font-sans-nav f-eyebrow text-[#2B2B2B]">
               SCHEDULE AN APPOINTMENT
             </p>
           </div>
 
-          {/* H2 Heading: 4 / 6 / 8 / 16 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "4 / 8" }} className="fe-block fe-top">
+          {/* H2 Heading: 4 / 5 / 8 / 18 */}
+          <div style={{ gridColumn: "5 / 18", gridRow: "4 / 8" }} className="fe-block fe-top">
             <h2 className="font-serif-heading f-h2 text-[#2B2B2B]">
-              Find a therapist who is the right fit for{" "}
+              Find a therapist who is the right fit<br />
+              for{" "}
               <span className="font-script f-script text-[#86B3B3]">you.</span>
             </h2>
           </div>
 
-          {/* Body text: 8 / 6 / 14 / 16 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "8 / 14" }} className="fe-block fe-top">
+          {/* Body text: 8 / 5 / 14 / 18 */}
+          <div style={{ gridColumn: "5 / 18", gridRow: "8 / 14" }} className="fe-block fe-top">
             <div className="fe-rte">
               <p className="font-body f-body text-[#2B2B2B]">
                 Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
@@ -1016,8 +1024,8 @@ export default function Part1ClonePage() {
             </div>
           </div>
 
-          {/* CTA Button: 14 / 6 / 16 / 16 */}
-          <div style={{ gridColumn: "6 / 16", gridRow: "14 / 16" }} className="fe-block items-start">
+          {/* CTA Button: 14 / 5 / 16 / 18 */}
+          <div style={{ gridColumn: "5 / 18", gridRow: "14 / 16" }} className="fe-block items-start">
             <a href="#contact" className="conejo-btn-pill">
               BOOK NOW
             </a>
